@@ -1,13 +1,88 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+*::after, ::before {
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --header-height: 60px;
+  --footer-height: 60px;
+  --gap: 24px;
+  --main-width: 720px;
+  --content-gap: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.header {
+  font-weight: 700;
+  font-size: 24px;
+  display: flex;
+  padding-left: 230px;
+  padding-top: 15px;
+  width: fit-content;
+  align-items: center;
+}
+
+.main {
+  position: relative;
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  max-width: calc(var(--main-width) + var(--gap) * 2);
+  margin: auto;
+  padding: var(--gap);
+}
+.main .info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: calc(100vh - var(--header-height) - var(--footer-height) - (var(--gap) * 2));
+  text-align: center;
+}
+.info-container p {
+  width: max-content;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px 0;
+}
+.info-container span {
+  display: flex;
+  width: max-content;
+}
+.image {
+  display: inline-table;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  -webkit-user-drag: none;
+}
+.toggle-dark-mode {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-mode-bg);
+  color: var(--dark-mode-text);
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  cursor: pointer;
+  outline: none;
+}
+
+.social-links {
+  padding-top: 14px;
 }
