@@ -161,3 +161,28 @@ body {
   color: rgb(63, 15, 108);
   transition: .2s;
 }
+
+.main-about {
+  position: relative;
+  margin: auto;
+  padding: 50px; 
+}
+.main-about .about {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  /* min-height: calc(100vh - var(--header-height) - var(--footer-height) - (var(--gap) * 2)); */
+  min-height: 100px;
+  text-align: center;
+}
+.about p {
+  width: max-content;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px 0;
+}
+.about span {
+  display: flex;
+  width: max-content;
+}
