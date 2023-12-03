@@ -4,7 +4,7 @@ import { FaGithub, FaTelegram } from "react-icons/fa";
 function SocialLinks() {
     return ( 
         <div className="social-links">
-            <a href="https://github.com/montanaaq" target="_blank" className="fa-github">
+            <a href="https://github.com/montanaaq" target="_blank" rel="noreferrer" className="fa-github">
                 <FaGithub size={25} style={
                     {
                         marginRight: "20px",
@@ -14,7 +14,7 @@ function SocialLinks() {
                     }
                 }/>
             </a>
-            <a href="https://t.me/montaanaq" target="_blank" className="fa-telegram">
+            <a href="https://t.me/montaanaq" target="_blank" rel="noreferrer" className="fa-telegram">
             <FaTelegram size={25} style={{
                 cursor: "pointer",
                 textDecoration: "none",
