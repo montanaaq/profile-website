@@ -45,8 +45,6 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 }
-
-
 .main {
   position: relative;
   min-height: calc(100vh - var(--header-height) - var(--footer-height));
@@ -100,12 +98,8 @@ body {
   background-color: var(--dark-mode-bg);
   color: var(--dark-mode-text);
   border: none;
-  /* padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 3px; */
   cursor: pointer;
   outline: none;
-  /* margin-left: 350px; */
 }
 .toggle-dark-mode:hover {
   opacity: .8;
@@ -190,4 +184,31 @@ body {
 .about span {
   display: flex;
   width: max-content;
-}
+} 
+
+ 
+ @media (max-width: 768px) {
+  .name {
+     font-size: 20px;
+  }
+ 
+  .image {
+     width: 150px;
+     height: 150px;
+  }
+ 
+  .social-links, .projects-list {
+     padding-top: 10px;
+  }
+ 
+  .show-button {
+     height: 25px;
+     padding: 2px;
+     font-size: 16px;
+  }
+ 
+  .project {
+     font-size: 18px;
+     padding: 8px 0;
+  }
+ }
