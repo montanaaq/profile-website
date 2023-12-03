@@ -8,7 +8,7 @@ const App = () => {
       <Header />
     <div className="main">
         <div className="info-container">
-            <img src={'./image.jpg'} alt="image out" className="image"/>
+            <img src={'./image.jpg'} alt="out" className="image"/>
             <p>Montana</p>
             <span>Python, Frontend Developer</span>
           <SocialLinks />

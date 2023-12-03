@@ -35,7 +35,7 @@ function Projects() {
                 <div className="projects-list">
                     {
                         projects.map((project) => <p>
-                            <a href={project[3]} target='_blank' className='project'>{project[0]}</a>: 
+                            <a href={project[3]} target='_blank' rel="noreferrer" className='project'>{project[0]}</a>: 
                                 {project[1]}
                                 <br />
                                 {project[2]}

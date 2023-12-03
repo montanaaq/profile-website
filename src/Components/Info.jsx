@@ -21,9 +21,9 @@ function InfoPage() {
                     Проекты
                 </h3>
                 <p style={{marginTop:"10px", marginLeft: "10px", wordBreak: "inherit"}}>За 1.5 года опыта, я успел реализовать несколько проектов, которые я и по сей день обновляю и исправляю. Некоторые из них представлены на главной странице моего сайта.<br /><br />
-                <a href="https://t.me/schedule_10t_bot" target="_blank" style={{textDecoration:"underline", color:"var(--text-color)"}}>Schedule Bot<br /></a>
-                <a href="https://t.me/sneaknews_bot" target="_blank" style={{textDecoration:"underline", color:"var(--text-color)"}}>SneaksNews Bot<br /></a>
-                <a href="https://t.me/uni_finder_bot" target="_blank" style={{textDecoration:"underline", color:"var(--text-color)"}}>UniFinder Bot</a>
+                <a href="https://t.me/schedule_10t_bot" target="_blank" rel="noreferrer" style={{textDecoration:"underline", color:"var(--text-color)"}}>Schedule Bot<br /></a>
+                <a href="https://t.me/sneaknews_bot" target="_blank" rel="noreferrer" style={{textDecoration:"underline", color:"var(--text-color)"}}>SneaksNews Bot<br /></a>
+                <a href="https://t.me/uni_finder_bot" target="_blank" rel="noreferrer" style={{textDecoration:"underline", color:"var(--text-color)"}}>UniFinder Bot</a>
                 </p>
             </div>
         </div>
