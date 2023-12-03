@@ -14,9 +14,8 @@ function Header() {
             color: 'var(--text-color)',
             textDecoration: 'none',
             fontSize: '22px',
-            display: 'inline-block',
-            marginLeft: '300px',
-          }}><h4 className="name">Информация</h4></Link>
+            display: 'flex',
+          }}><h4 className="name-info">Информация</h4></Link>
     </header>
      );
 }
