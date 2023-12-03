@@ -1,3 +1,7 @@
+html[data-theme='dark'] {
+  --text-color: rgb(245, 245, 245);
+  --bg-color: rgb(37, 37, 37);
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +10,8 @@
   box-sizing: border-box;
 }
 :root {
-  --bg-color: #ffffff;
-  --text-color: #000000;
+  --bg-color: rgb(245, 245, 245);
+  --text-color: rgb(37, 37, 37);
   --header-height: 60px;
   --footer-height: 60px;
   --gap: 24px;
@@ -23,6 +27,7 @@ body {
   height: 100vh;
   background-color: var(--bg-color);
   color: var(--text-color);
+  transition: .2s;
 }
 
 .header {
@@ -31,8 +36,13 @@ body {
   display: flex;
   padding-left: 230px;
   padding-top: 15px;
-  width: fit-content;
+  padding-bottom: 10px;
+  width: 100%;
+  height: fit-content;
   align-items: center;
+  border-bottom: 3px solid var(--text-color);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
 
 .main {
@@ -60,6 +70,14 @@ body {
   display: flex;
   width: max-content;
 }
+.name {
+  color: var(--text-color);
+  text-decoration: none;
+}
+.name:hover {
+  opacity: .8;
+  transition: .2s;
+}
 .image {
   display: inline-table;
   border-radius: 50%;
@@ -81,8 +99,65 @@ body {
   padding-top: 3px;
   cursor: pointer;
   outline: none;
+  margin-left: 350px;
+}
+.toggle-dark-mode:hover {
+  opacity: .8;
+  transition: .2s;
 }
 
 .social-links {
   padding-top: 14px;
+}
+.projects-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: 2.5s anim-lineUp ease-out 0s;
+}
+.show-button {
+  width: max-content;
+  margin-top: 30px;
+  height: 30px;
+  padding: 3px;
+  border-radius: 10px;
+  color: var(--bg-color);
+  background-color: var(--text-color);
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  transition: all .2s ease-in;
+  margin-bottom: 10px;
+}
+
+.show-button:hover {
+  box-shadow: 0px 5px 20px rgba(238, 130, 238, 0.427);
+  transform: scale(1.05);
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.project {
+  cursor: pointer;
+  color: var(--text-color);
+}
+.project:hover { 
+  color: rgb(63, 15, 108);
+  transition: .2s;
 }

@@ -3,29 +3,19 @@ import { FiMoon, FiSun } from 'react-icons/fi';
 
 const DarkModeToggle = () => {
  const [darkMode, setDarkMode] = useState(false);
- const [bodyStyles, setBodyStyles] = useState({});
-
- useEffect(() => {
-    setBodyStyles(document.body.style);
- }, []);
 
  const toggleDarkMode = () => {
     const newDarkMode = !darkMode;
-    const newBodyStyles = {
-      ...bodyStyles,
-      backgroundColor: newDarkMode ? 'rgb(22, 23, 22)' : '#ffffff',
-      color: newDarkMode ? '#ffffff' : 'rgb(22, 23, 22)',
-    };
+    const isDarkMode = document.documentElement.getAttribute('data-theme') === 'dark';
+    document.documentElement.setAttribute('data-theme', isDarkMode ? 'light' : 'dark');
 
     setDarkMode(newDarkMode);
-    setBodyStyles(newBodyStyles);
-    Object.assign(document.body.style, newBodyStyles);
  };
 
  return (
     <div>
       <button onClick={toggleDarkMode} className='toggle-dark-mode'>
-        {darkMode ? <FiSun size={18}/> : <FiMoon size={18}/>}
+        {darkMode ? <FiSun size={24}/> : <FiMoon size={24}/>}
       </button>
     </div>
  );
