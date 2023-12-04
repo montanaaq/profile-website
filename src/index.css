@@ -62,9 +62,10 @@ body {
 }
 .info-container p {
   width: max-content;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 600;
-  padding: 8px 0;
+  margin-top: 10px;
+  padding: 6px 0;
 }
 .info-container span {
   display: flex;
@@ -116,6 +117,12 @@ body {
   flex-direction: column;
   animation: 2.5s anim-lineUp ease-out 0s;
 }
+.projects-list p {
+  font-size: 20px;
+}
+.projects-list a {
+  color: var(--text-color);
+}
 .show-button {
   width: max-content;
   margin-top: 30px;
@@ -153,15 +160,10 @@ body {
     transform: translateY(0%);
   }
 }
-.project {
-  cursor: pointer;
-  color: var(--text-color);
-}
-.project:hover { 
+.projects-list a:hover { 
   color: rgb(63, 15, 108);
   transition: .2s;
 }
-
 .main-about {
   position: relative;
   margin: auto;
@@ -179,7 +181,8 @@ body {
   width: max-content;
   font-size: 20px;
   font-weight: 600;
-  padding: 8px 0;
+  margin-top: 10px;
+  padding: 6px 0;
 }
 .about span {
   display: flex;
@@ -191,7 +194,12 @@ body {
   .name {
      font-size: 20px;
   }
- 
+  .name-info {
+    font-size: 20px;
+  }
+  .toggle-dark-mode {
+    font-size: 18px;
+  }
   .image {
      width: 150px;
      height: 150px;
@@ -207,8 +215,22 @@ body {
      font-size: 16px;
   }
  
-  .project {
-     font-size: 18px;
-     padding: 8px 0;
+  .projects-list p {
+    font-size: 16px;
+    color: var(--text-color);
   }
+  .footer {
+    font-size: 10px;
+  }
+ }
+ .footer {
+  font-size: 12px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: 600;
+ }
+ .footer a, .footer span {
+  color: black;
  }

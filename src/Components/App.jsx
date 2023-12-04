@@ -1,6 +1,7 @@
 import SocialLinks from "./SocialLinks";
 import Projects from "./Projects";
 import Header from './Header'
+import Footer from './Footer'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Projects />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -12,7 +12,7 @@ function InfoPage() {
                 <h3>
                     Введение
                 </h3>
-                <p style={{marginTop:"10px", marginLeft: "10px", wordBreak: "inherit"}}>&nbsp;&nbsp;&nbsp;&nbsp;Привет! Меня зовут Амир, я начинающий python, frontend программист. Сейчас мне 16 лет, начинал я ещё в 8 классе, после уроков информатики на которых мне понравилось писать программы для автоматизации чего-либо.<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;После этого я поехал в детский лагерь <b>Байтик</b> в котором я написал свой первый проект, а именно сайт про Дворец Культуры Ленина. Меня очень затянул процесс кодинга и я продолжил изучать Frontend разработку.</p>
+                <p style={{marginTop:"10px", marginLeft: "10px", wordBreak: "inherit"}}>Привет! Меня зовут Амир, я начинающий python, frontend программист. Сейчас мне 16 лет, начинал я ещё в 8 классе, после уроков информатики на которых мне понравилось писать программы для автоматизации чего-либо.<br />После этого я поехал в детский лагерь <b>Байтик</b> в котором я написал свой первый проект, а именно сайт про Дворец Культуры Ленина. Меня очень затянул процесс кодинга и я продолжил изучать Frontend разработку.</p>
                 <h3 style={{marginTop:"10px"}}>
                     Знания языков
                 </h3>
@@ -21,9 +21,9 @@ function InfoPage() {
                     Проекты
                 </h3>
                 <p style={{marginTop:"10px", marginLeft: "10px", wordBreak: "inherit"}}>За 1.5 года опыта, я успел реализовать несколько проектов, которые я и по сей день обновляю и исправляю. Некоторые из них представлены на главной странице моего сайта.<br /><br />
-                <a href="https://t.me/schedule_10t_bot" target="_blank" rel="noreferrer" style={{textDecoration:"underline", color:"var(--text-color)"}}>Schedule Bot<br /></a>
-                <a href="https://t.me/sneaknews_bot" target="_blank" rel="noreferrer" style={{textDecoration:"underline", color:"var(--text-color)"}}>SneaksNews Bot<br /></a>
-                <a href="https://t.me/uni_finder_bot" target="_blank" rel="noreferrer" style={{textDecoration:"underline", color:"var(--text-color)"}}>UniFinder Bot</a>
+                <a href="https://t.me/schedule_10t_bot" target="_blank" rel="noreferrer" style={{textDecoration:"underline", color:"var(--text-color)", justifyContent: 'center', display: 'flex'}}>Schedule Bot<br /></a>
+                <a href="https://t.me/sneaknews_bot" target="_blank" rel="noreferrer" style={{textDecoration:"underline", color:"var(--text-color)", justifyContent: 'center', display: 'flex'}}>SneaksNews Bot<br /></a>
+                <a href="https://t.me/uni_finder_bot" target="_blank" rel="noreferrer" style={{textDecoration:"underline", color:"var(--text-color)", justifyContent: 'center', display: 'flex'}}>UniFinder Bot</a>
                 </p>
             </div>
         </div>

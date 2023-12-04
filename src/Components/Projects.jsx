@@ -34,12 +34,12 @@ function Projects() {
                 show &&
                 <div className="projects-list">
                     {
-                        projects.map((project) => <p>
-                            <a href={project[3]} target='_blank' rel="noreferrer" className='project'>{project[0]}</a>: 
+                        projects.map((project) =>(<p>
+                            <a href={project[3]} target='_blank' rel="noreferrer">{project[0]}</a>: 
                                 {project[1]}
                                 <br />
                                 {project[2]}
-                                </p>)
+                                </p>))
                     }
                 </div>
             }

@@ -15,7 +15,7 @@ const DarkModeToggle = () => {
  return (
     <div>
       <button onClick={toggleDarkMode} className='toggle-dark-mode'>
-        {darkMode ? <FiSun size={26}/> : <FiMoon size={26}/>}
+        {darkMode ? <FiSun size={24}/> : <FiMoon size={24}/>}
       </button>
     </div>
  );
