@@ -2,12 +2,12 @@ import Header from "./Header";
 
 function InfoPage() {
     return ( 
-        <div>
+        <div style={{height:'100vh'}}>
             <Header />
             <div className="main-about">
                 <div className="about">
                     <p>Montana</p>
-                    <span>Python, Frontend Developer</span>
+                    <span>Python, Front end Developer</span>
                 </div>
                 <h3>
                     Введение
