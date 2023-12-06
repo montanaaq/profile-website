@@ -3,7 +3,6 @@ import Projects from "./Projects";
 import Header from './Header'
 import Footer from './Footer'
 
-//update??
 const App = () => {
   return (
     <div className="App">

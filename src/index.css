@@ -57,6 +57,12 @@ body {
   min-height: calc(100vh - var(--header-height) - var(--footer-height) - (var(--gap) * 2));
   text-align: center;
 }
+.main-post {
+  position: relative;
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  max-width: calc(var(--main-width) + var(--gap) * 2);
+  margin: auto;
+}
 .info-container p {
   width: max-content;
   font-size: 26px;
@@ -188,6 +194,7 @@ body {
 } 
 
 .footer {
+  text-align: center;
   font-size: 12px;
   width: 100%;
   display: flex;
@@ -202,7 +209,6 @@ body {
  .footer .a:hover {
   color: black;
  }
-
  @media (max-width: 768px) {
   .info-container p {
     font-size: 30px;
