@@ -241,4 +241,30 @@ body {
   .show-button {
     font-size: 18px;
   }
+  .main-post {
+      padding: 20px;
+  }
+
+  .post-content {
+      padding: 0 10px;
+  }
+
+  .post-content h2 {
+      font-size: 24px;
+  }
+
+  .post-content ul {
+      padding: 0;
+  }
+
+  .post-content ul li {
+      margin-bottom: 10px;
+  }
+
+  .post-content img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      margin-bottom: 50px;
+}
  }
