@@ -9,7 +9,7 @@ const App = () => {
       <Header />
     <div className="main">
         <div className="info-container">
-            <img src={'./image.jpg'} alt="out" className="image"/>
+            <img src={'https://i.imgur.com/QATGgCo.jpg'} alt="out" className="image"/>
             <p>Montana</p>
             <span>Python, Frontend Developer</span>
           <SocialLinks />
