@@ -209,13 +209,13 @@ body {
  .footer .a:hover {
   color: black;
  }
- .post-content img {
+ .post-content img:not(.sneaknews-img) {
   width: 400px;
   height: 400px;
   border-radius: 15px;
   margin-bottom: 50px;
 }
-.post-content img .sneaknews {
+.sneaknews-img {
   width: 400px;
   height: 700px;
   border-radius: 15px;
@@ -277,13 +277,13 @@ body {
       margin-bottom: 10px;
   }
 
-  .post-content img {
+  .post-content img:not(.sneaknews-img) {
       width: 300px;
       height: 300px;
       border-radius: 15px;
       margin-bottom: 50px;
 }
-  .post-content img .sneaknews {
+  .sneaknews-img {
       width: 300px;
       height: 600px;
       border-radius: 15px;
