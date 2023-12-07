@@ -209,6 +209,12 @@ body {
  .footer .a:hover {
   color: black;
  }
+ .post-content img {
+  width: 400px;
+  height: 400px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
  @media(max-width: 768px) {
   html {
     overflow-x: hidden;
@@ -266,8 +272,9 @@ body {
   }
 
   .post-content img {
-      width: 250px;
-      height: 250px;
+      width: 300px;
+      height: 300px;
+      border-radius: 15px;
       margin-bottom: 50px;
 }
  }
