@@ -215,6 +215,12 @@ body {
   border-radius: 15px;
   margin-bottom: 50px;
 }
+.post-content img .sneaknews {
+  width: 400px;
+  height: 700px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
  @media(max-width: 768px) {
   html {
     overflow-x: hidden;
@@ -277,4 +283,10 @@ body {
       border-radius: 15px;
       margin-bottom: 50px;
 }
+  .post-content img .sneaknews {
+      width: 300px;
+      height: 600px;
+      border-radius: 15px;
+      margin-bottom: 50px;
+  }
  }

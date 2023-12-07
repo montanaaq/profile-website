@@ -25,10 +25,10 @@ function InfoPage() {
                 <img src="https://i.imgur.com/Pbg1RuD.png" alt="not downloaded"/>
                 <h2 style={{marginBottom:'20px'}} id='sneaknews'>Расчёт стоимости товаров на Poizon</h2>
                 <p style={{marginBottom:'30px'}}>Бот, который поможет вам расчитать стоимость товара с Poizon и оформить заказ</p>
-                <img src="https://i.imgur.com/9OHFTw6.png" alt="not downloaded"/>
+                <img src="https://i.imgur.com/9OHFTw6.png" alt="not downloaded" className="sneaknews"/>
                 <h2 style={{marginBottom:'20px'}} id='unifinder'>Бот по подбору университета в вашем городе</h2>
                 <p style={{marginBottom:'30px'}}>Бот который узнает информацию о ваших баллах и местоположении и выдает вам наиболее точный результат</p>
-                <img src="https://i.imgur.com/afWkow6.png" alt="not downloaded"/>
+                <img src="https://i.imgur.com/afWkow6.png" alt="not downloaded" />
             </div>
             <Footer />
         </div>
