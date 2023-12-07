@@ -1,7 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 
-function InfoPage() {
+const InfoPage = () => {
     return ( 
     <div>
         <Header />

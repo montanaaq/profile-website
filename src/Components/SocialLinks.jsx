@@ -1,7 +1,7 @@
 import { FaGithub, FaTelegram } from "react-icons/fa";
 
 
-function SocialLinks() {
+const SocialLinks = () => {
     return ( 
         <div className="social-links">
             <a href="https://github.com/montanaaq" target="_blank" rel="noreferrer" className="fa-github">

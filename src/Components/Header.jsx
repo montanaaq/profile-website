@@ -1,7 +1,7 @@
 import DarkModeToggle from "./DarkModeToggle";
 import { Link } from "react-router-dom";
 
-function Header() {
+const Header = () => {
     return ( 
     <header className="header">
         <Link to='/' style={{

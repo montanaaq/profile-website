@@ -21,7 +21,7 @@ const projects = [
     ]
 ]
 
-function Projects() {
+const Projects = () => {
     const [show, setShow] = useState(false)
 
     function toggleProjects() {
