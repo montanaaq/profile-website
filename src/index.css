@@ -209,7 +209,11 @@ body {
  .footer .a:hover {
   color: black;
  }
- @media (max-width: 768px) {
+ @media(max-width: 768px) {
+  html {
+    overflow-x: hidden;
+    margin-right: calc(-1 * (100vw - 100%));
+  }
   .info-container p {
     font-size: 30px;
   }
@@ -262,9 +266,8 @@ body {
   }
 
   .post-content img {
-      width: 100%;
-      height: auto;
-      border-radius: 15px;
+      width: 250px;
+      height: 250px;
       margin-bottom: 50px;
 }
  }
