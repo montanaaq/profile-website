@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FiMoon, FiSun } from 'react-icons/fi';
 
 const DarkModeToggle = () => {
- const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(false);
 
  const toggleDarkMode = () => {
     const newDarkMode = !darkMode;
@@ -10,7 +10,7 @@ const DarkModeToggle = () => {
     document.documentElement.setAttribute('data-theme', isDarkMode ? 'light' : 'dark');
 
     setDarkMode(newDarkMode);
- };
+ }
 
  return (
     <div>
