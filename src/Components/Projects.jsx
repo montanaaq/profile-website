@@ -4,7 +4,7 @@ const projects = [
     [
         "ScheduleBot",
         "2023-н.д",
-        "Бот, для пересылки сообщений о расписании во всей школе",
+        "Бот, занятий расписания в школе",
         "http://t.me/schedule_10t_bot"
     ],
     [
@@ -18,6 +18,12 @@ const projects = [
         "2023-н.д",
         "Бот, для подбора университета с помощью ChatGPT",
         "http://t.me/uni_finder_bot"
+    ],
+    [
+        'Profile Website',
+        '2023-н.д',
+        'Вебсайт портфолио React',
+        'https://montaanaq.netlify.app'
     ]
 ]
 
