@@ -25,6 +25,12 @@ const information = [
         "p": "Данный сайт, также является моим проектом, который я разрабатываю и по сей день. Также он полностью написен на фреймворке React",
         "url": "my-website",
         "img": "https://i.imgur.com/dYkfBLc.png"
+    },
+    {
+        'name': 'Сайт по подбору университетов',
+        'p': 'Сайт, с помощью которого вы сможете найти подходящий вам по баллам и местоположению университет. Написан на React',
+        'url': 'uni-finder-website',
+        'img': 'https://i.imgur.com/gDLtFUa.png'
     }
 ]
 
@@ -52,7 +58,7 @@ const InfoPage = () => {
                     <div className="container">
                         <h2 style={{marginBottom: '20px'}} id={el.url}>{el.name}</h2>
                         <p style={{marginBottom: '30px'}}>{el.p}</p>
-                        <img src={el.img} alt="not downloaded" className={el.url === 'sneaknews' ? 'sneaknews-img': ''}/>
+                        <img src={el.img} alt="not downloaded" className={el.url === 'sneaknews' ? 'sneaknews-img': '' || el.url === 'uni-finder-website' ? 'uni-finder-website-img' : ''}/>
                     </div>
                 ))}
             </div>
