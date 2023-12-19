@@ -41,7 +41,7 @@ const Projects = () => {
     }
     return ( 
         <div>
-            <button onClick={toggleProjects} className='show-button'>{show ? 'Скрыть' : 'Показать'} Проекты</button>
+            <button onClick={toggleProjects} className='show-button'>{show ? 'Скрыть' : 'Показать'} проекты</button>
             {
                 show &&
                 <div className="projects-list">
