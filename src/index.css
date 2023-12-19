@@ -202,6 +202,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   font-weight: 600;
+  padding-bottom: 10px;
  }
 .footer .a, .footer span {
   color: var(--text-color);
