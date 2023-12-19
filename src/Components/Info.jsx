@@ -42,7 +42,7 @@ const InfoPage = () => {
             <header style={{margin:'40px 0px 40px 0px'}}>
                 <h1 style={{fontSize:'38px'}}>Мои проекты</h1>
                 <div>
-                    <span>December 6, 2023</span>
+                    <span>December 18, 2023</span>
                 </div>
             </header>
             <div className="post-content">
