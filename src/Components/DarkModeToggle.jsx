@@ -8,7 +8,6 @@ const DarkModeToggle = () => {
     const newDarkMode = !darkMode;
     const isDarkMode = document.documentElement.getAttribute('data-theme') === 'dark';
     document.documentElement.setAttribute('data-theme', isDarkMode ? 'light' : 'dark');
-
     setDarkMode(newDarkMode);
  }
 

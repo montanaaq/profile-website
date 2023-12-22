@@ -2,6 +2,9 @@ html[data-theme='dark'] {
   --text-color: rgb(245, 245, 245);
   --bg-color: rgb(37, 37, 37);
 }
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
