@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Button from '@mui/material/Button';
 
 const projects = [
     [
@@ -9,7 +10,7 @@ const projects = [
     ],
     [
         "SneaksBot",
-        "сентябрь 2023 - н.д",
+        "октябрь 2023 - н.д",
         "Бот, для удобного расчёта стоимости товаров на Poizon",
         "http://t.me/sneaknews_bot"
     ],
@@ -41,7 +42,7 @@ const Projects = () => {
     }
     return ( 
         <div>
-            <button onClick={toggleProjects} className='show-button'><span style={{color: 'var(--text-color)', fontWeight: '400'}}>{show ? 'Hide' : 'Show'} projects</span></button>
+            <Button variant='outlined' onClick={toggleProjects} style={{marginTop: '10px'}} size='small'>{show ? 'Hide' : 'Show'} projects</Button>
             {
                 show &&
                 <div className="projects-list">

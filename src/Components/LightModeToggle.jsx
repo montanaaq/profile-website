@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { FiMoon, FiSun } from 'react-icons/fi';
+import LightModeIcon from '@mui/icons-material/LightMode'
+import DarkModeIcon from '@mui/icons-material/DarkMode'
 
 const LightModeToggle = () => {
     const [lightMode, setLightMode] = useState(false);
@@ -13,7 +14,7 @@ const LightModeToggle = () => {
  return (
     <div>
       <button onClick={toggleLightMode} className='toggle-light-mode'>
-        {lightMode ? <FiSun size={24}/> : <FiMoon size={24}/>}
+        {lightMode ? <LightModeIcon fontSize='small' /> : <DarkModeIcon fontSize='small' />}
       </button>
     </div>
  );

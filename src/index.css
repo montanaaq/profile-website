@@ -17,7 +17,7 @@ html {
 :root {
   --text-color: rgb(245, 245, 245);
   --bg-color: rgb(37, 37, 37);
-  --secondary: rgb(58, 81, 255);
+  --secondary: #1876D2;
   --header-height: 60px;
   --footer-height: 60px;
   --gap: 24px;
@@ -26,7 +26,6 @@ html {
 }
 
 body {
-  font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100vw;
@@ -43,11 +42,20 @@ body {
   display: flex;
   width: 100%;
   height: var(--header-height);
-  align-items: center;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
   text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   flex-direction: row;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header .wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header .wrapper .name {
+  margin-right: 10px;
 }
 .main {
   position: relative;
@@ -92,7 +100,6 @@ body {
   font-weight: 500;
 }
 .name-info {
-  color: var(--text-color);
   text-decoration: none;
   font-weight: 500;
 }
@@ -109,6 +116,7 @@ body {
   -webkit-user-drag: none;
 }
 .toggle-light-mode {
+  margin-top: 3px;
   color: var(--text-color);
   background-color: var(--bg-color);
   display: flex;
@@ -132,54 +140,11 @@ body {
   margin-top: 5px;
 }
 .namespace .projects-list p {
-  font-size: 20px;
+  font-size: 18px;
 }
 .namespace .projects-list a {
   color: var(--secondary);
   text-decoration: none;
-}
-.show-button {
-  margin-top: 10px;
-  background: transparent;
-  position: relative;
-  padding: 5px 15px;
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
-  border: 1px solid var(--secondary);
-  border-radius: 15px;
-  outline: none;
-  overflow: hidden;
-  transition: color 0.1s 0.1s ease-out;
-  text-align: center;
-}
-
-.show-button::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  content: '';
-  border-radius: 50%;
-  display: block;
-  width: 20em;
-  height: 20em;
-  left: -5em;
-  text-align: center;
-  transition: box-shadow 0.5s ease-out;
-  z-index: -1;
-}
-
-.show-button:hover {
-  color: var(--text-color);
-  border: 1px solid var(--secondary);
-}
-
-.show-button:hover::before {
-  box-shadow: inset 0 0 0 10em rgba(24, 0, 66, 0.572);
 }
  
 @keyframes anim-lineUp {
@@ -262,7 +227,7 @@ body {
   border-radius: 15px;
   margin-bottom: 50px;
 }
- @media only screen and (max-width: 768px) and (max-width: 1024px) {
+ @media only screen and (max-width: 768px) {
   html {
     overflow-x: hidden;
     margin-right: calc(-1 * (100vw - 100%));
@@ -296,7 +261,7 @@ body {
   }
  
   .projects-list p {
-    font-size: 16px;
+    font-size: 14px;
     color: var(--text-color);
   }
   .footer {

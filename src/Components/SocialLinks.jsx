@@ -1,11 +1,11 @@
-import { FaGithub, FaTelegram } from "react-icons/fa";
-
+import TelegramIcon from '@mui/icons-material/Telegram';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const SocialLinks = () => {
     return ( 
         <div className="social-links">
             <a href="https://github.com/montanaaq" target="_blank" rel="noreferrer" className="fa-github">
-                <FaGithub size={25} style={
+                <GitHubIcon fontSize='medium' style={
                     {
                         marginRight: "20px",
                         cursor: "pointer",
@@ -15,7 +15,7 @@ const SocialLinks = () => {
                 }/>
             </a>
             <a href="https://t.me/montaanaq" target="_blank" rel="noreferrer" className="fa-telegram">
-            <FaTelegram size={25} style={{
+            <TelegramIcon fontSize='medium' style={{
                 cursor: "pointer",
                 textDecoration: "none",
                 color: "var(--text-color)",

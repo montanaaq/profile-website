@@ -4,12 +4,14 @@ import { Link } from "react-router-dom";
 const Header = () => {
     return ( 
     <header className="header">
+      <div className="wrapper">
         <Link to='/' style={{
             textDecoration: 'none'
         }}>
             <h4 className="name">Montana</h4>
         </Link>
-          <LightModeToggle />
+        <LightModeToggle />
+        </div>
           <Link to='/info' style={{
             color: 'var(--text-color)',
             textDecoration: 'none',
