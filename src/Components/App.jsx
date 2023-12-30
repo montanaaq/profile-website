@@ -9,11 +9,12 @@ const App = () => {
       <Header />
     <div className="main">
         <div className="info-container">
-            <img src={'https://i.imgur.com/QATGgCo.jpg'} alt="out" className="image"/>
-            <p>Montana</p>
+          <img src={'https://i.imgur.com/QATGgCo.jpg'} alt="out" className="image"/>
+          <div className='namespace'><p>Hi! I'm <span>Montana</span></p>
             <span>Python, Frontend Developer</span>
           <SocialLinks />
           <Projects />
+          </div>
         </div>
       </div>
       <Footer />

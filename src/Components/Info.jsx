@@ -40,7 +40,7 @@ const InfoPage = () => {
         <Header />
         <div className="main-post">
             <header style={{margin:'40px 0px 40px 0px'}}>
-                <h1 style={{fontSize:'38px'}}>Мои проекты</h1>
+                <h1 style={{fontSize:'38px', }}>Мои <span style={{color: 'var(--secondary)'}}>проекты</span></h1>
                 <div>
                     <span>December 18, 2023</span>
                 </div>

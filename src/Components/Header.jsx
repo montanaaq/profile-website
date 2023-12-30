@@ -1,4 +1,4 @@
-import DarkModeToggle from "./DarkModeToggle";
+import LightModeToggle from "./LightModeToggle.jsx";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -9,13 +9,13 @@ const Header = () => {
         }}>
             <h4 className="name">Montana</h4>
         </Link>
-          <DarkModeToggle />
+          <LightModeToggle />
           <Link to='/info' style={{
             color: 'var(--text-color)',
             textDecoration: 'none',
             fontSize: '22px',
             display: 'flex',
-          }}><h4 className="name-info">Информация</h4></Link>
+          }}><h4 className="name-info">Information</h4></Link>
     </header>
      );
 }
