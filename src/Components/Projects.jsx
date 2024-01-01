@@ -1,61 +1,27 @@
 import { useState } from 'react'
 import Button from '@mui/material/Button';
-
-const projects = [
-    [
-        "ScheduleBot",
-        "сентябрь 2023 - н.д",
-        "Бот, занятий расписания в школе",
-        "http://t.me/schedule_10t_bot"
-    ],
-    [
-        "SneaksBot",
-        "октябрь 2023 - н.д",
-        "Бот, для удобного расчёта стоимости товаров на Poizon",
-        "http://t.me/sneaknews_bot"
-    ],
-    [
-        "UniFinder",
-        "ноябрь 2023 - н.д",
-        "Бот, для подбора университета с помощью ChatGPT",
-        "http://t.me/uni_finder_bot"
-    ],
-    [
-        'Profile Website',
-        'ноябрь 2023 - н.д',
-        'Вебсайт портфолио React',
-        'https://montaanaq.netlify.app'
-    ],
-    [
-        'UniFinder Website',
-        'декабрь 2023 - н.д',
-        'Сайт по подбору университетов',
-        'https://uni-finder-mntq.netlify.app'
-    ]
-]
+import { ProjectsList } from '../data/Projects/ProjectsList';
+import { enqueueSnackbar } from 'notistack';
 
 const Projects = () => {
     const [show, setShow] = useState(false)
-
-    function toggleProjects() {
+    const toggleProjects = (variant) => () => {
         setShow(!show)
+        variant === 'success' ? enqueueSnackbar('Opened!', { variant }) : enqueueSnackbar('Closed!', { variant });
     }
     return ( 
         <div>
-            <Button variant='outlined' onClick={toggleProjects} style={{marginTop: '10px'}} size='small'>{show ? 'Hide' : 'Show'} projects</Button>
-            {
-                show &&
-                <div className="projects-list">
+            <Button variant='outlined' onClick={!show ? toggleProjects('success') : toggleProjects('error')} style={{marginTop: '10px'}} size='small'>{show ? 'Hide' : 'Show'} projects</Button>
+            { show && (<div className="projects-list">
                     {
-                        projects.map((project) =>(<p>
-                            <a href={project[3]} target='_blank' rel="noreferrer">{project[0]}</a>:&nbsp;
-                                {project[1]}
+                        ProjectsList.map((project) =>(<p>
+                            <a href={project.link} target='_blank' rel="noreferrer">{project.main_name}</a>:&nbsp;
+                                {project.date}
                                 <br />
-                                {project[2]}
+                                {project.info}
                                 </p>))
                     }
-                </div>
-            }
+                </div>)}
         </div>
      );
 }
