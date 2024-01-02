@@ -1,7 +1,7 @@
 import SocialLinks from "./SocialLinks";
 import Projects from "./Projects";
-import Header from './Header'
-import Footer from './Footer'
+import Header from '../Homepage/Header/Header';
+import Footer from '../Homepage/Footer/Footer'
 
 const App = () => {
   return (

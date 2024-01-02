@@ -203,10 +203,10 @@ body {
   align-items: center;
   font-weight: 500;
  }
-.footer .a, .footer span {
+.footer a, .footer span {
   color: var(--text-color);
  }
-.footer .a:hover {
+.footer a:hover {
   opacity: .8;
  }
 .post-content img:not(.sneaknews-img):not(.uni-finder-website-img) {
@@ -214,18 +214,21 @@ body {
   height: 400px;
   border-radius: 15px;
   margin-bottom: 50px;
+  margin-top: 15px;
 }
 .sneaknews-img {
   width: 400px;
   height: 700px;
   border-radius: 15px;
   margin-bottom: 50px;
+  margin-top: 15px;
 }
 .uni-finder-website-img {
   width: 600px;
   height: 400px;
   border-radius: 15px;
   margin-bottom: 50px;
+  margin-top: 15px;
 }
  @media only screen and (max-width: 768px) {
   html {
@@ -295,17 +298,20 @@ body {
       height: 300px;
       border-radius: 15px;
       margin-bottom: 50px;
+      margin-top: 15px;
 }
   .sneaknews-img {
-      width: 300px;
+      width: 340px;
       height: 600px;
       border-radius: 15px;
       margin-bottom: 50px;
+      margin-top: 15px;
   }
   .uni-finder-website-img {
     width: 350px;
     height: 225px;
     border-radius: 15px;
     margin-bottom: 50px;
+    margin-top: 15px;
 }
  }

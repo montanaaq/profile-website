@@ -1,5 +1,6 @@
 export const ProjectsList = [
     {
+        "id": 1,
         "name": "Бот расписаний занятий",
         "p": "Бот позволяет просматривать расписание занятий в вашей школе через телеграм",
         "url": "schedulebot",
@@ -10,6 +11,7 @@ export const ProjectsList = [
         "link": "http://t.me/schedule_10t_bot"
     },
     {
+        "id": 2,
         "name": "Бот онлайн магазина Poizon",
         "p": "Бот, который поможет вам расчитать стоимость товара с Poizon и оформить заказ",
         "url": "sneaknews",
@@ -20,6 +22,7 @@ export const ProjectsList = [
         "link": "http://t.me/sneaknews_bot"
     },
     {
+        "id": 3,
         "name": "Бот по подбору университета в вашем городе",
         "p": "Бот, который подбирает вам наилучший вариант в вашем городе, судя по вашим баллам (работает с помощью ChatGPT)",
         "url": "unifinder",
@@ -30,6 +33,7 @@ export const ProjectsList = [
         "link": "http://t.me/uni_finder_bot"
     },
     {
+        "id": 4,
         "name": "Мой сайт портфолио",
         "p": "Данный сайт, также является моим проектом, который я разрабатываю и по сей день. Также он полностью написен на фреймворке React",
         "url": "my-website",
@@ -37,9 +41,11 @@ export const ProjectsList = [
         "main_name": "Profile Website",
         "date": "ноябрь 2023 - н.д",
         "info": "Вебсайт портфолио на React",
-        "link": "https://montaanaq.netlify.app"
+        "link": "https://montaanaq.netlify.app",
+        "source_code": "https://github.com/sourcecode"
     },
     {
+        "id": 5,
         'name': 'Сайт по подбору университетов',
         'p': 'Сайт, с помощью которого вы сможете найти подходящий вам по баллам и местоположению университет. Написан на React',
         'url': 'uni-finder-website',
