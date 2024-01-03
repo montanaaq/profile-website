@@ -26,9 +26,9 @@ const InfoPage = () => {
                     <div className="container" key={el.id}>
                         <h2 style={{marginBottom: '20px'}} id={el.url} >{el.name}</h2>
                         <p style={{marginBottom: '10px'}} >{el.p}</p>
-                        {el.source_code ? <a href={el.source_code} style={{
+                        {el.source_code ? <div><a href={el.source_code} target='_blank' rel="noreferrer" style={{
                             color: 'var(--text-color)'
-                    }}>Source code</a> : ''}
+                    }}>Source code</a></div> : ''}
                         <img src={el.img} alt="not downloaded" className={el.url === 'sneaknews' ? 'sneaknews-img': '' || el.url === 'uni-finder-website' ? 'uni-finder-website-img' : ''}  />
                     </div>
                 ))}

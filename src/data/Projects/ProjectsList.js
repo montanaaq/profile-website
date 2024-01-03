@@ -42,7 +42,7 @@ export const ProjectsList = [
         "date": "ноябрь 2023 - н.д",
         "info": "Вебсайт портфолио на React",
         "link": "https://montaanaq.netlify.app",
-        "source_code": "https://github.com/sourcecode"
+        "source_code": "https://github.com/montanaaq/profile-website"
     },
     {
         "id": 5,

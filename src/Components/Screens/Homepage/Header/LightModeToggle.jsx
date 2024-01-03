@@ -10,7 +10,7 @@ const LightModeToggle = () => {
     const isLightMode = document.documentElement.getAttribute('data-theme') === 'light';
     document.documentElement.setAttribute('data-theme', isLightMode ? 'dark' : 'light');
     setLightMode(!lightMode);
-    !lightMode ? enqueueSnackbar('Light mode activated!') : enqueueSnackbar('Light mode deactivated!');
+    !lightMode ? enqueueSnackbar('Light mode activated!', { variant: 'info' }) : enqueueSnackbar('Light mode deactivated!', { variant: 'info' } );
  }
 
  return (
