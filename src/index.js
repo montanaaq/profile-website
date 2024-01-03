@@ -9,8 +9,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <SnackbarProvider maxSnack={2} autoHideDuration={1500} />
+    <SnackbarProvider maxSnack={2} autoHideDuration={1500}>
       <Router />
+    </SnackbarProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
