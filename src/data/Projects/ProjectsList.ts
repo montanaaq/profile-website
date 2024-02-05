@@ -6,7 +6,6 @@ interface IProjectsList {
     img : string,
     main_name : string
     date : string
-    info : string,
     link : string,
     source_code? : string
 }
@@ -20,7 +19,6 @@ export const ProjectsList: IProjectsList[] = [
         "img":  "https://i.imgur.com/Pbg1RuD.png",
         "main_name": "ScheduleBot",
         "date": "сентябрь 2023 - н.д",
-        "info": "Бот, занятий расписания в школе",
         "link": "http://t.me/schedule_10t_bot"
     },
     {
@@ -31,7 +29,6 @@ export const ProjectsList: IProjectsList[] = [
         "img":  "https://i.imgur.com/9OHFTw6.png",
         "main_name": "SneaksBot",
         "date": "октябрь 2023 - н.д",
-        "info": "Бот, для удобного расчёта стоимости товаров на Poizon",
         "link": "http://t.me/sneaknews_bot"
     },
     {
@@ -42,7 +39,6 @@ export const ProjectsList: IProjectsList[] = [
         "img":  "https://i.imgur.com/afWkow6.png",
         "main_name": "UniFinder",
         "date": "ноябрь 2023 - н.д",
-        "info": "Бот, для подбора университета с помощью ChatGPT",
         "link": "http://t.me/uni_finder_bot"
     },
     {
@@ -50,10 +46,9 @@ export const ProjectsList: IProjectsList[] = [
         "name": "Мой сайт портфолио",
         "p": "Данный сайт, также является моим проектом, который я разрабатываю и по сей день. Также он полностью написен на фреймворке React",
         "url": "my-website",
-        "img": "https://i.imgur.com/dYkfBLc.png",
+        "img": "https://i.imgur.com/Qv1123v.png",
         "main_name": "Profile Website",
         "date": "ноябрь 2023 - н.д",
-        "info": "Вебсайт портфолио на React",
         "link": "https://montaanaq.netlify.app",
         "source_code": "https://github.com/montanaaq/profile-website"
     },
@@ -65,7 +60,6 @@ export const ProjectsList: IProjectsList[] = [
         'img': 'https://i.imgur.com/gDLtFUa.png',
         "main_name": "UniFinder Website",
         "date": "декабрь 2023 - н.д",
-        "info": 'Сайт для подбора университета',
         "link": 'https://uni-finder-mntq.netlify.app'
     }
 ]

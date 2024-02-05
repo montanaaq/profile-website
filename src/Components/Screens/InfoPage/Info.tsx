@@ -11,7 +11,7 @@ const InfoPage: FC = () => {
             <header style={{margin:'40px 0px 40px 0px'}}>
                 <h1 style={{fontSize:'38px', }}>Мои <span style={{color: 'var(--secondary)'}}>проекты</span></h1>
                 <div>
-                    <span>December 18, 2023</span>
+                    <span>February 5, 2024</span>
                 </div>
             </header>
             <div className="post-content">
@@ -25,12 +25,16 @@ const InfoPage: FC = () => {
                 </ul>
                 {ProjectsList.map((el) => (
                     <div className="container" key={el.id}>
-                        <h2 style={{marginBottom: '20px'}} id={el.url} >{el.name}</h2>
+                        <h2 style={{marginBottom: '20px'}} id={el.url} >{el.name} <p>({el.date})</p></h2>
                         <p style={{marginBottom: '10px'}} >{el.p}</p>
+                        {el.link && <div><a rel="noreferrer" target="_blank" href={el.link} style={{
+                            color: 'var(--text-color)',
+                            marginBottom: '10px',
+                        }}>Ссылка</a></div>}
                         {el.source_code ? <div><a href={el.source_code} target='_blank' rel="noreferrer" style={{
                             color: 'var(--text-color)'
                     }}>Source code</a></div> : ''}
-                        <img src={el.img} alt="not downloaded" className={el.url === 'sneaknews' ? 'sneaknews-img': '' || el.url === 'uni-finder-website' ? 'uni-finder-website-img' : ''}  />
+                        <img src={el.img} alt="not downloaded" className={el.url === 'sneaknews' ? 'sneaknews-img': '' || el.url === 'uni-finder-website' ? 'uni-finder-website-img' : '' || el.url === 'my-website' ? 'profile_website_img' : ''}  />
                     </div>
                 ))}
             </div>

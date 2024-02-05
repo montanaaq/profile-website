@@ -1,5 +1,5 @@
 import SocialLinks from "./SocialLinks.tsx";
-import Projects from "./Projects";
+import Buttons from "./Buttons.tsx";
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import { FC } from "react";
@@ -14,7 +14,8 @@ const App: FC = () => {
           <div className='namespace'><p>Hi! I'm <span>Montana</span></p>
             <span>Python, Frontend Developer</span>
           <SocialLinks />
-          <Projects />
+          <div style={{paddingTop: '15px'}}></div>
+          <Buttons />
           </div>
         </div>
       </div>
