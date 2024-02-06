@@ -1,13 +1,13 @@
 interface IProjectsList {
-    id : number,
-    name : string,
-    p : string,
-    url : string,
-    img : string,
-    main_name : string
-    date : string
-    link : string,
-    source_code? : string
+    id: number,
+    name: string,
+    p: string,
+    url: string,
+    img: string,
+    main_name: string
+    date: string
+    link: string,
+    source_code?: string
 }
 
 export const ProjectsList: IProjectsList[] = [

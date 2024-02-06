@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
-import Router from './Router'
+import Router from './Router/Router'
 import { SnackbarProvider } from 'notistack'
 import Circles from './Components/Circles'
 
