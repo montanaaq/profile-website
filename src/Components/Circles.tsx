@@ -1,22 +1,22 @@
 import styles from './Circles.module.css'
-import { FC } from 'react';
+import { FC, ReactElement } from 'react';
 
-const Circles: FC<{children: any}> = ({ children }) => {
+const Circles: FC<{ children: ReactElement }> = ({ children }) => {
     return (
         <>
-              <ul className={styles.circles} >
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-              </ul>
-              {children}
+            <ul className={styles.circles} >
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            {children}
         </>
     );
 }
