@@ -89,7 +89,7 @@ body {
     gap: 40px;
 }
 .info-container .namespace {
-  margin-left: 30px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
 }
