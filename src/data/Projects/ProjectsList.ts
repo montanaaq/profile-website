@@ -60,6 +60,7 @@ export const ProjectsList: IProjectsList[] = [
         'img': 'https://i.imgur.com/gDLtFUa.png',
         "main_name": "UniFinder Website",
         "date": "декабрь 2023 - н.д",
-        "link": 'https://uni-finder-mntq.netlify.app'
+        "link": 'https://uni-finder-mntq.netlify.app',
+        "source_code": "https://github.com/montanaaq/uni-finder-website"
     }
 ]
