@@ -1,11 +1,11 @@
 import { FC } from 'react'
 import Circles from '../../Circles'
-import Page from './page'
+import ViewPage from './ViewPage'
 
 const IdePage: FC = () => {
   return (
     <Circles>
-      <Page />
+      <ViewPage />
     </Circles>
   )
 }

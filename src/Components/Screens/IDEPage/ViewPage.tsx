@@ -1,24 +1,24 @@
-import Header from "../Homepage/Header/Header";
-import { FC } from "react";
+import Header from '../Homepage/Header/Header'
+import { FC } from 'react'
 import ContentCopyIcon from '@mui/icons-material/ContentCopy'
 import { useRef } from 'react'
 
-const Page: FC = () => {
-    const pRef = useRef<HTMLPreElement>(null)
-    const copyToClipboard = () => {
-        if (pRef.current) {
-          const range = document.createRange()
-          range.selectNode(pRef.current)
-          window.getSelection()?.removeAllRanges()
-          window.getSelection()?.addRange(range)
-          document.execCommand('copy')
-          window.getSelection()?.removeAllRanges()
-          alert('settings.json copied!')
-        }
-      }
-    return (
-        <>
-    <Header />
+const ViewPage: FC = () => {
+  const pRef = useRef<HTMLPreElement>(null)
+  const copyToClipboard = () => {
+    if (pRef.current) {
+      const range = document.createRange()
+      range.selectNode(pRef.current)
+      window.getSelection()?.removeAllRanges()
+      window.getSelection()?.addRange(range)
+      document.execCommand('copy')
+      window.getSelection()?.removeAllRanges()
+      alert('settings.json copied!')
+    }
+  }
+  return (
+    <>
+      <Header />
       <div className="main-post">
         <div className="wrapper">
           <div
@@ -145,8 +145,8 @@ const Page: FC = () => {
           </div>
         </div>
       </div>
-      </>
-    );
+    </>
+  )
 }
 
-export default Page;
+export default ViewPage;
