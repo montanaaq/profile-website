@@ -9,7 +9,7 @@ const ViewPage: FC = () => {
       <Header />
       <div className="main-post">
         <header style={{ margin: '40px 0px 40px 0px' }}>
-          <h1 style={{ fontSize: '38px' }}>
+          <h1 style={{ fontSize: '38px', fontWeight: 600 }}>
             Мои <span style={{ color: 'var(--secondary)' }}>проекты</span>
           </h1>
           <div>
