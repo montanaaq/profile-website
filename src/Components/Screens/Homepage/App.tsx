@@ -3,10 +3,12 @@ import Buttons from './Buttons.tsx'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
 import { FC } from 'react'
+import Snowfall from 'react-snowfall'
 
 const App: FC = () => {
   return (
     <div className="App">
+      <Snowfall />
       <Header />
       <div className="main">
         <div className="info-container">

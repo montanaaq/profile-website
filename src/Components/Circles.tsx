@@ -1,7 +1,7 @@
 import styles from './Circles.module.css'
 import { FC, ReactElement } from 'react';
 
-const Circles: FC<{ children: ReactElement }> = ({ children }) => {
+const Circles: FC<{ children: ReactElement<any> }> = ({ children }) => {
     return (
         <>
             <ul className={styles.circles} >
