@@ -1,11 +1,12 @@
-import SocialLinks from './SocialLinks.tsx'
-import Buttons from './Buttons.tsx'
-import Header from './Header/Header'
-import Footer from './Footer/Footer'
-import { FC } from 'react'
+import { FC, useState } from 'react'
 import Snowfall from 'react-snowfall'
+import Buttons from './Buttons.tsx'
+import Footer from './Footer/Footer'
+import Header from './Header/Header'
+import SocialLinks from './SocialLinks.tsx'
 
 const App: FC = () => {
+  const [count, setCount] = useState(1)
   return (
     <div className="App">
       <Snowfall />

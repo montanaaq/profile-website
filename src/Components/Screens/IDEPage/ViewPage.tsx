@@ -1,152 +1,37 @@
 import Header from '../Homepage/Header/Header'
 import { FC } from 'react'
-import ContentCopyIcon from '@mui/icons-material/ContentCopy'
-import { useRef } from 'react'
+import Edit from './Edit'
 
 const ViewPage: FC = () => {
-  const pRef = useRef<HTMLPreElement>(null)
-  const copyToClipboard = () => {
-    if (pRef.current) {
-      const range = document.createRange()
-      range.selectNode(pRef.current)
-      window.getSelection()?.removeAllRanges()
-      window.getSelection()?.addRange(range)
-      document.execCommand('copy')
-      window.getSelection()?.removeAllRanges()
-      alert('settings.json copied!')
-    }
-  }
   return (
     <>
       <Header />
       <div className="main-post">
         <div className="wrapper">
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: '100px',
-              marginTop: '50px',
-              marginBottom: '50px'
-            }}
-          >
-            <h2>Мои настройки VSCode</h2>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"
-              alt="vscode_ico"
-              style={{
-                width: '80px'
-              }}
-            />
-          </div>
-          <div className="settings">
-            <pre
-              style={{
-                fontSize: '18px',
-                marginBottom: '40px'
-              }}
-            >
-              settings.json
-            </pre>
-            <pre ref={pRef}>
-              "explorer.confirmDragAndDrop": false,
-              <br />
-              "explorer.confirmDelete": false,
-              <br />
-              "security.workspace.trust.untrustedFiles": "open",
-              <br />
-              "javascript.updateImportsOnFileMove.enabled": "always",
-              <br />
-              "workbench.sideBar.location": "right",
-              <br />
-              "workbench.iconTheme": "catppuccin-perfect-sequoia",
-              <br />
-              "editor.minimap.enabled": false,
-              <br />
-              "workbench.statusBar.visible": false,
-              <br />
-              "editor.stickyScroll.enabled": true,
-              <br />
-              "workbench.settings.applyToAllProfiles": [ "editor.fontFamily" ],
-              <br />
-              "files.autoSave": "afterDelay",
-              <br />
-              "editor.fontFamily": "JetBrainsMono Nerd Font",
-              <br />
-              "editor.cursorSmoothCaretAnimation": "on",
-              <br />
-              "editor.cursorBlinking": "expand",
-              <br />
-              "editor.smoothScrolling": true,
-              <br />
-              "editor.cursorStyle": "line-thin",
-              <br />
-              "editor.fontLigatures": true,
-              <br />
-              "editor.glyphMargin": false,
-              <br />
-              "git.autofetch": true,
-              <br />
-              "git.enableSmartCommit": true,
-              <br />
-              "terminal.integrated.enableMultiLinePasteWarning": false,
-              <br />
-              "tabnine.experimentalAutoImports": true,
-              <br />
-              "workbench.colorTheme": "Catppuccin Mocha Bordered",
-              <br />
-              "workbench.editor.enablePreview": false,
-              <br />
-              "window.density.editorTabHeight": "compact",
-              <br />
-              "window.commandCenter": false,
-              <br />
-              "workbench.activityBar.location": "top",
-              <br />
-              "explorer.compactFolders": false,
-              <br />
-              "workbench.productIconTheme": "fluent-icons",
-              <br />
-              "terminal.integrated.fontSize": 12,
-              <br />
-              "terminal.integrated.tabs.enableAnimation": false,
-              <br />
-              "terminal.integrated.drawBoldTextInBrightColors": true,
-              <br />
-              "terminal.integrated.gpuAcceleration": "off",
-              <br />
-              "editor.scrollbar.vertical": "hidden",
-              <br />
-              "editor.scrollbar.horizontal": "hidden",
-              <br />
-              "window.titleBarStyle": "custom",
-              <br />
-              "workbench.layoutControl.enabled": false,
-              <br />
-              "livePreview.notifyOnOpenLooseFile": false,
-              <br />
-              "redhat.telemetry.enabled": true,
-              <br />
-              "git.openRepositoryInParentFolders": "never",
-              <br />
-              "hediet.vscode-drawio.resizeImages": null,
-              <br />
-              "vsicons.dontShowNewVersionMessage": true,
-              <br />
-              "window.zoomLevel": 1,
-              <br />
-            </pre>
-            <button onClick={copyToClipboard} className="copy_button">
-              <ContentCopyIcon fontSize="small" />
-              Copy
-            </button>
-            <b>Но незабудь скачать шрифты и иконки!)</b>
-          </div>
+          <Edit
+            header={'Мои настройки VSCode'}
+            subHeader={'settings.json'}
+            mainInfo={
+              '"explorer.confirmDragAndDrop": false,<br />"explorer.confirmDelete": false,<br />"security.workspace.trust.untrustedFiles": "open",<br />"javascript.updateImportsOnFileMove.enabled": "always",<br />"workbench.sideBar.location": "right",<br />"workbench.iconTheme": "catppuccin-perfect-sequoia",<br />"editor.stickyScroll.enabled": true,<br />"workbench.settings.applyToAllProfiles": ["editor.fontFamily"],<br />"files.autoSave": "afterDelay",<br />"editor.fontFamily": "JetBrainsMono Nerd Font",<br />"editor.cursorSmoothCaretAnimation": "on",<br />"editor.cursorBlinking": "expand",<br />"editor.smoothScrolling": true,<br />"editor.cursorStyle": "line-thin",<br />"editor.glyphMargin": false,<br />"git.autofetch": true,<br />"git.enableSmartCommit": true,<br />"workbench.colorTheme": "Catppuccin Mocha",<br />"workbench.editor.enablePreview": false,<br />"python.defaultInterpreterPath": "/usr/local/bin/python3",<br />"window.density.editorTabHeight": "compact",<br />"workbench.activityBar.location": "top",<br />"explorer.compactFolders": false,<br />"terminal.integrated.tabs.enableAnimation": false,<br />"terminal.integrated.drawBoldTextInBrightColors": true,<br />"terminal.integrated.gpuAcceleration": "off",<br />"git.terminalAuthentication": false,<br />"terminal.integrated.env.windows": {},<br />"terminal.integrated.cursorStyle": "line",<br />"editor.scrollbar.vertical": "hidden",<br />"editor.scrollbar.horizontal": "hidden",<br />"window.titleBarStyle": "custom",<br />"workbench.layoutControl.enabled": false,<br />"livePreview.notifyOnOpenLooseFile": false,<br />"redhat.telemetry.enabled": true,<br />"git.openRepositoryInParentFolders": "never",<br />"hediet.vscode-drawio.resizeImages": null,<br />"vsicons.dontShowNewVersionMessage": true, <br />"prettier.configPath": "",<br />"window.zoomLevel": 1,<br />"editor.minimap.enabled": false,<br />"editor.formatOnSave": true,<br />"window.commandCenter": false,<br />"cmake.options.statusBarVisibility": "compact",<br />"workbench.startupEditor": "none",<br />"batch-runner.cmdPath": "/Applications/iTerm.app"'
+            }
+            img={'https://code.visualstudio.com/assets/images/code-stable.png'}
+            alt={'vscode_ico'}
+          />
+          <Edit
+            header={'Мои расширения VSCode'}
+            subHeader={'extensions'}
+            mainInfo={
+              'Из основных расширений, которые я использую могу порекомендовать 3 из них:<br /> <br /> 1. <u>Codeium</u> - это ИИ, который помогает вам писать код на этапе разработке и также есть отдельный чат с ним <br /><a href="https://codeium.com">Ссылка</a> <br />Extension ID - Codeium.codeium <br /><img class="codeium_img" src="https://i.imgur.com/9Okepby.png" alt="codeium_img"/> <br /><br /> 2. <u>Backticks</u> - это ещё одно из моих любимых расширений, так как он автоматически ставит за вас обратные ковычки при f строках в JS, также считаю очень полезным и всегда использую <br />Extension ID - fractalbrew.backticks <img class="backticks_img" src="https://i.imgur.com/JekVb0c.png" alt="backticks_img" /><br /><br /> 3. <u>Error Lens</u> - расширение, которое показывает ваши ошибки прямо в строке VSCode, очень полезно, так как видно где какая ошибка была допущена Extension ID - usernamehw.errorlens.<img src="https://i.imgur.com/mxvn9Ha.png" alt="errorlens_img" class="errorlens_img" /> <br /><br />Конечно же у меня есть очень много тем, которые также являются расширениями. Вот небольшой список моих любимых: <br /> <ul><li>Catpuccin Themes</li><li>Andromeda</li><li>Eva Theme</li><li>Horizon Theme</li><li>Material Theme</li></ul>'
+            }
+            img={
+              'https://www-assets.kolide.com/assets/inventory/device_properties/icons/vs-code-extensions-0037129be9c8e68253967dd0217dab55a93dba09.png'
+            }
+            alt={'extensions_ico'}
+          />
         </div>
       </div>
     </>
   )
 }
 
-export default ViewPage;
+export default ViewPage
