@@ -10,11 +10,11 @@ interface IMusicList {
 export const MusicList: IMusicList[] = [
     {
         id: 1,
-        name: 'Epic Bass Lines',
-        img: 'https://i.imgur.com/mwBMhxx.png',
+        name: 'Demon Days',
+        img: 'https://upload.wikimedia.org/wikipedia/ru/1/19/Demon_Days.jpeg',
         alt: 'playlist_1',
         link: 'https://open.spotify.com/playlist/7AK3XaevqKSINk0tbdFEyy?si=8429d80383774f75',
-        duration: '16 час. 40 мин.'
+        duration: '50 мин. 47 сек.'
     },
     {
         id: 2,

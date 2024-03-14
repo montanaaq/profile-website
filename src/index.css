@@ -375,7 +375,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
 }
 .card .small {
   font-size: 22px;
@@ -533,6 +533,7 @@ a {
     gap: 40px;
     flex-direction: column;
   }
+
 }
 @keyframes animateOnLoad {
   from {

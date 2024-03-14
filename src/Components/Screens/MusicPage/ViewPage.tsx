@@ -9,7 +9,7 @@ const ViewPage = () => {
       <div className="main-post">
         <div className="mp_wrapper">
           <div className="header_container">
-            <h1
+            <h2
               dangerouslySetInnerHTML={{
                 __html: 'Моя <p style="color: var(--secondary)"> музыка</p>'
               }}
@@ -17,30 +17,29 @@ const ViewPage = () => {
                 display: 'flex',
                 gap: '10px'
               }}
-            ></h1>
+            ></h2>
             <img
               src="https://static-00.iconduck.com/assets.00/spotify-icon-2048x2048-5gqpkwih.png"
               alt="spotify_ico"
               style={{
-                width: '80px',
-                height: '80px',
+                width: '60px',
+                height: '60px',
                 marginBottom: '10px'
               }}
             />
           </div>
           <div className="music_container">
-            {
-                MusicList.map(el => (
-                    <Card key={el.id}
-                        id={el.id}
-                        name={el.name}
-                        img={el.img}
-                        alt={el.alt}
-                        link={el.link}
-                        duration={el.duration}
-                    />
-                ))
-            }
+            {MusicList.map(el => (
+              <Card
+                key={el.id}
+                id={el.id}
+                name={el.name}
+                img={el.img}
+                alt={el.alt}
+                link={el.link}
+                duration={el.duration}
+              />
+            ))}
           </div>
         </div>
       </div>
