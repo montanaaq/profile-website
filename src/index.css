@@ -307,6 +307,9 @@ a {
 .settings_text ul {
   list-style: none;
 }
+.header_text a {
+  color: var(--secondary);
+}
 
 .copy_button {
   padding: 10px 15px 10px 15px;

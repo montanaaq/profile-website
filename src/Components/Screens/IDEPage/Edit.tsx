@@ -43,7 +43,10 @@ const Edit: FC<EditProps> = ({
           marginBottom: '50px'
         }}
       >
-        <h2>{header}</h2>
+        <h2
+          className="header_text"
+          dangerouslySetInnerHTML={{ __html: header }}
+        ></h2>
         <img
           src={img}
           alt={alt}
@@ -64,9 +67,9 @@ const Edit: FC<EditProps> = ({
         <pre
           style={{
             whiteSpace: 'pre-wrap',
-            wordBreak: 'break-word',
+            wordBreak: 'break-word'
           }}
-          className='settings_text'
+          className="settings_text"
           ref={pRef}
           dangerouslySetInnerHTML={{ __html: mainInfo }}
         ></pre>

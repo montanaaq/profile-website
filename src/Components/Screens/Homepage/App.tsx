@@ -11,7 +11,7 @@ const App: FC = () => {
       <Snowfall />
       <Header />
       <div className="main">
-        <div className="info-container">
+      <div className="info-container">
           <img
             src={'https://i.imgur.com/QATGgCo.jpg'}
             alt="out"
