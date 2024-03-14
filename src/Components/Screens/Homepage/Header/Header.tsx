@@ -1,4 +1,4 @@
-import LightModeToggle from './LightModeToggle.jsx'
+import LightModeToggle from './LightModeToggle.js'
 import { Link } from 'react-router-dom'
 import { FC } from 'react'
 

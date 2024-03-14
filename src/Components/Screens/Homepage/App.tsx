@@ -1,8 +1,8 @@
 import { FC } from 'react'
 import Snowfall from 'react-snowfall'
 import Buttons from './Buttons.tsx'
-import Footer from './Footer/Footer'
-import Header from './Header/Header'
+import Footer from './Footer/Footer.tsx'
+import Header from './Header/Header.tsx'
 import SocialLinks from './SocialLinks.tsx'
 
 const App: FC = () => {
@@ -11,7 +11,7 @@ const App: FC = () => {
       <Snowfall />
       <Header />
       <div className="main">
-      <div className="info-container">
+        <div className="info-container">
           <img
             src={'https://i.imgur.com/QATGgCo.jpg'}
             alt="out"

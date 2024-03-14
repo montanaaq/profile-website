@@ -336,6 +336,19 @@ a {
   left: 10px;
   bottom: 10px;
 }
+.mp_wrapper {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.header_container {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 20px;
+}
 .button_wrapper {
   display: flex;
   flex-direction: row;
@@ -348,6 +361,41 @@ a {
 .button_wrapper Button {
   background-color: var(--secondary);
 }
+
+.card {
+  width: 100%;
+  min-width: 300px;
+  min-height: 350px;
+  background-color: rgba(0, 0, 0, 0.197);
+  border-radius: 20px;
+  padding: 15px;
+  padding-bottom: 40px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.card .small {
+  font-size: 22px;
+}
+.card .img_container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.card img {
+  border-radius: 20px;
+  max-width: 300px;
+  max-height: 300px;
+}
+.music_container {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
 @media only screen and (max-width: 768px) {
   html {
     overflow-x: hidden;
@@ -471,6 +519,19 @@ a {
   }
   .settings b {
     display: none;
+  }
+  .card {
+    min-width: 250px;
+    min-height: 300px;
+  }
+  .card img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .music_container {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
   }
 }
 @keyframes animateOnLoad {

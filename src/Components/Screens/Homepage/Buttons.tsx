@@ -15,19 +15,14 @@ const Buttons: FC = () => {
           Settings
         </Button>
       </Link>
-      <Button
-        size="small"
-        variant="contained"
-        disabled
-        style={{
-          color: 'var(--text-color)',
-          opacity: 0.8,
-          pointerEvents: 'auto',
-          cursor: 'not-allowed'
-        }}
-      >
-        Music
-      </Button>
+      <Link to="/music">
+        <Button
+          size="small"
+          variant="contained"
+        >
+          Music
+        </Button>
+      </Link>
     </div>
   )
 }
