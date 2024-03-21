@@ -13,7 +13,7 @@ export const MusicList: IMusicList[] = [
         name: 'Gorillaz - Demon Days',
         img: 'https://upload.wikimedia.org/wikipedia/ru/1/19/Demon_Days.jpeg',
         alt: 'playlist_1',
-        link: 'https://open.spotify.com/playlist/7AK3XaevqKSINk0tbdFEyy?si=8429d80383774f75',
+        link: 'https://open.spotify.com/album/0bUTHlWbkSQysoM3VsWldT?si=jZ0lZNs1SiiqY7EjTV9xDw',
         duration: '50 мин. 47 сек.'
     },
     {
