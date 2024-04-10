@@ -1,4 +1,4 @@
-import App from '../Components/Screens/Homepage/App'
+import App from '../Components/Screens/Homepage/App/App'
 import InfoPage from '../Components/Screens/InfoPage/Info'
 import IdePage from '../Components/Screens/IDEPage/IdePage'
 import { ReactElement } from 'react'

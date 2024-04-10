@@ -1,14 +1,12 @@
 import { FC } from 'react'
-import Snowfall from 'react-snowfall'
-import Buttons from './Buttons.tsx'
-import Footer from './Footer/Footer.tsx'
-import Header from './Header/Header.tsx'
-import SocialLinks from './SocialLinks.tsx'
+import Buttons from '../Buttons.tsx'
+import Footer from '../Footer/Footer.tsx'
+import Header from '../Header/Header.tsx'
+import SocialLinks from '../SocialLinks.tsx'
 
-const App: FC = () => {
+const ViewPage: FC = () => {
   return (
-    <div className="App">
-      <Snowfall />
+    <>
       <Header />
       <div className="main">
         <div className="info-container">
@@ -29,7 +27,8 @@ const App: FC = () => {
         </div>
       </div>
       <Footer />
-    </div>
+    </>
   )
 }
-export default App
+
+export default ViewPage
