@@ -23,11 +23,6 @@ const ViewPage = () => {
             <img
               src="https://static-00.iconduck.com/assets.00/spotify-icon-2048x2048-5gqpkwih.png"
               alt="spotify_ico"
-              style={{
-                width: '85px',
-                height: '85px',
-                marginBottom: '10px'
-              }}
             />
           </div>
           <div className='author_container'>

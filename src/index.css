@@ -218,6 +218,7 @@ a {
 }
 
 .footer {
+
   text-align: center;
   font-size: 12px;
   width: 100%;
@@ -363,7 +364,11 @@ a {
 .button_wrapper Button {
   background-color: var(--secondary);
 }
-
+.header_container img {
+  width: 85px;
+  height: 85px;
+  margin-bottom: 10px;
+}
 .card {
   width: 100%;
   min-width: 300px;
@@ -445,6 +450,11 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+  html[data-theme='light'] {
+    --text-color: rgb(37, 37, 37);
+    --bg-color: rgb(225, 225, 225);
+    --circles-color: rgba(0, 0, 0, 0.2);
+  }
   html {
     overflow-x: hidden;
     margin-right: calc(-1 * (100vw - 100%));
@@ -568,10 +578,17 @@ a {
   .settings b {
     display: none;
   }
+  .header_container h1 {
+    font-size: 30px;
+  }
+  .header_container img {
+    width: 65px;
+    height: 65px;
+  }
   .card {
-    max-width: 350px;
+    max-width: 300px;
     padding: 20px;
-    max-height: 350px;
+    max-height: 300px;
   }
   .card .small {
     font-size: 18px;
