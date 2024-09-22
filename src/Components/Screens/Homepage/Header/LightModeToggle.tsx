@@ -15,8 +15,8 @@ const LightModeToggle: FC = () => {
     )
     setLightMode(!lightMode)
     !lightMode
-      ? enqueueSnackbar('Light mode activated!', { variant: 'info' })
-      : enqueueSnackbar('Light mode deactivated!', { variant: 'info' })
+      ? enqueueSnackbar('Light theme activated!', { variant: 'info' })
+      : enqueueSnackbar('Dark theme activated!', { variant: 'info' })
   }
 
   return (
