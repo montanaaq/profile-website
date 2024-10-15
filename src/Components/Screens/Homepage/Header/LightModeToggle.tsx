@@ -1,7 +1,8 @@
 import { useState, FC } from 'react'
 import LightModeIcon from '@mui/icons-material/LightMode'
 import DarkModeIcon from '@mui/icons-material/DarkMode'
-import { enqueueSnackbar } from 'notistack'
+import { Toaster, toast } from 'sonner'
+
 
 const LightModeToggle: FC = () => {
   const [lightMode, setLightMode] = useState(false)
@@ -15,12 +16,13 @@ const LightModeToggle: FC = () => {
     )
     setLightMode(!lightMode)
     !lightMode
-      ? enqueueSnackbar('Light theme activated!', { variant: 'info' })
-      : enqueueSnackbar('Dark theme activated!', { variant: 'info' })
+      ? toast.info('Light theme activated!')
+      : toast.info('Dark theme activated!')
   }
 
   return (
     <div>
+      <Toaster richColors position='bottom-left' expand />
       <button onClick={toggleLightMode} className="toggle-light-mode">
         {!lightMode ? (
           <LightModeIcon fontSize="small" />

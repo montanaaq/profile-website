@@ -1,7 +1,7 @@
 import { FC } from 'react'
-import Header from '../Homepage/Header/Header'
-import Footer from '../Homepage/Footer/Footer'
 import { ProjectsList } from '../../../data/Projects/ProjectsList'
+import Footer from '../Homepage/Footer/Footer'
+import Header from '../Homepage/Header/Header'
 
 const ViewPage: FC = () => {
   return (
@@ -84,9 +84,9 @@ const ViewPage: FC = () => {
                 className={
                   el.url === 'sneaknews'
                     ? 'sneaknews-img'
-                    : '' || el.url === 'uni-finder-website'
+                    : el.url === 'uni-finder-website'
                     ? 'uni-finder-website-img'
-                    : '' || el.url === 'my-website'
+                    : el.url === 'my-website'
                     ? 'profile_website_img'
                     : ''
                 }
