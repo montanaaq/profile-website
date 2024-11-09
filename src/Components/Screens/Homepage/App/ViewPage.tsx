@@ -11,7 +11,7 @@ const ViewPage: FC = () => {
       <div className="main">
         <div className="info-container">
           <img
-            src={'https://i.imgur.com/QATGgCo.jpg'}
+            src='./avatar.jpg'
             alt="out"
             className="image"
           />
