@@ -13,6 +13,7 @@ type AuthorCardProps = {
 const AuthorCard: FC<AuthorCardProps> = ({id, name, img, info, link, alt}) => {
     return (
         <div className="author_card">
+            <img key={`img_${id}`} src={img} alt={alt} className="author_img"/>
             <div>
                 <h3 key={`author_${id}`} className='author_name'>{name}</h3>
                 <p key={`info_${id}`} className="author_info">{info}</p>
@@ -26,7 +27,6 @@ const AuthorCard: FC<AuthorCardProps> = ({id, name, img, info, link, alt}) => {
                 Перейти
                 </Button>
             </div>
-            <img key={`img_${id}`} src={img} alt={alt} className="author_img"/>
         </div>
     );
 }

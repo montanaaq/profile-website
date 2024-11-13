@@ -43,10 +43,10 @@ const Edit: FC<EditProps> = ({
           marginBottom: '50px'
         }}
       >
-        <h1
+        <h2
           className="header_text"
           dangerouslySetInnerHTML={{ __html: header }}
-        ></h1>
+        ></h2>
         <img
           src={img}
           alt={alt}

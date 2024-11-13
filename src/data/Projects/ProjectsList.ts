@@ -4,8 +4,9 @@ interface IProjectsList {
     p: string,
     url: string,
     img: string,
-    main_name: string
-    date: string
+    main_name: string,
+    date: string,
+    isSupport: boolean,
     link: string,
     source_code?: string
 }
@@ -16,9 +17,10 @@ export const ProjectsList: IProjectsList[] = [
         "name": "Бот расписаний занятий",
         "p": "Бот, который позволяет вам просматривать расписание занятий в вашей школе",
         "url": "schedulebot",
-        "img":  "https://i.imgur.com/Pbg1RuD.png",
+        "img":  "https://i.imgur.com/VBSXfjZ.png",
         "main_name": "ScheduleBot",
-        "date": "сентябрь 2023 - н.д",
+        "date": "сентябрь 2023",
+        "isSupport": false,
         "link": "http://t.me/schedule_10t_bot"
     },
     {
@@ -28,7 +30,8 @@ export const ProjectsList: IProjectsList[] = [
         "url": "sneaknews",
         "img":  "https://i.imgur.com/9OHFTw6.png",
         "main_name": "SneaksBot",
-        "date": "октябрь 2023 - н.д",
+        "date": "октябрь 2023",
+        "isSupport": true,
         "link": "http://t.me/sneaknews_bot"
     },
     {
@@ -38,7 +41,8 @@ export const ProjectsList: IProjectsList[] = [
         "url": "unifinder",
         "img":  "https://i.imgur.com/afWkow6.png",
         "main_name": "UniFinder",
-        "date": "ноябрь 2023 - н.д",
+        "date": "ноябрь 2023",
+        "isSupport": false,
         "link": "http://t.me/uni_finder_bot"
     },
     {
@@ -48,8 +52,9 @@ export const ProjectsList: IProjectsList[] = [
         "url": "my-website",
         "img": "https://i.imgur.com/Qv1123v.png",
         "main_name": "Profile Website",
-        "date": "ноябрь 2023 - н.д",
+        "date": "ноябрь 2023",
         "link": "https://montaanaq.netlify.app",
+        "isSupport": true,
         "source_code": "https://github.com/montanaaq/profile-website"
     },
     {
@@ -59,7 +64,8 @@ export const ProjectsList: IProjectsList[] = [
         'url': 'uni-finder-website',
         'img': 'https://i.imgur.com/gDLtFUa.png',
         "main_name": "UniFinder Website",
-        "date": "декабрь 2023 - н.д",
+        "date": "декабрь 2023",
+        "isSupport": false,
         "link": 'https://uni-finder-mntq.netlify.app',
         "source_code": "https://github.com/montanaaq/uni-finder-website"
     }
