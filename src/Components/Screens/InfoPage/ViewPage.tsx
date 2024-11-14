@@ -4,6 +4,13 @@ import Footer from '../Homepage/Footer/Footer'
 import Header from '../Homepage/Header/Header'
 
 const ViewPage: FC = () => {
+  const today = new Date();
+  
+  const formattedDate = new Intl.DateTimeFormat('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  }).format(today);
   return (
     <div>
       <Header />
@@ -13,7 +20,7 @@ const ViewPage: FC = () => {
             Мои <span style={{ color: 'var(--secondary)' }}>проекты</span>
           </h1>
           <div>
-            <span>February 5, 2024</span>
+            <span>{formattedDate}</span>
           </div>
         </header>
         <div className="post-content">
