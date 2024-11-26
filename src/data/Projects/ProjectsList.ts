@@ -18,7 +18,7 @@ export const ProjectsList: IProjectsList[] = [
         "p": "Бот, который позволяет вам просматривать расписание занятий в вашей школе",
         "url": "schedulebot",
         "img":  "https://i.imgur.com/VBSXfjZ.png",
-        "main_name": "ScheduleBot",
+        "main_name": "Schedule Bot",
         "date": "сентябрь 2023",
         "isSupport": false,
         "link": "http://t.me/schedule_10t_bot"
@@ -29,7 +29,7 @@ export const ProjectsList: IProjectsList[] = [
         "p": "Бот, который поможет вам расчитать стоимость товара с Poizon и оформить заказ",
         "url": "sneaknews",
         "img":  "https://i.imgur.com/9OHFTw6.png",
-        "main_name": "SneaksBot",
+        "main_name": "SneakNews Bot",
         "date": "октябрь 2023",
         "isSupport": true,
         "link": "http://t.me/sneaknews_bot"
@@ -40,33 +40,45 @@ export const ProjectsList: IProjectsList[] = [
         "p": "Бот, который подбирает вам наилучший вариант в вашем городе, судя по вашим баллам (работает с помощью ChatGPT)",
         "url": "unifinder",
         "img":  "https://i.imgur.com/afWkow6.png",
-        "main_name": "UniFinder",
+        "main_name": "UniFinder Bot",
         "date": "ноябрь 2023",
         "isSupport": false,
         "link": "http://t.me/uni_finder_bot"
     },
     {
         "id": 4,
+        'name': 'Сайт по подбору университетов',
+        'p': 'Сайт, с помощью которого вы сможете найти подходящий вам по баллам и местоположению университет. Написан на React',
+        'url': 'uni-finder-website',
+        'img': 'https://i.imgur.com/gDLtFUa.png',
+        "main_name": "UniFinder Site",
+        "date": "декабрь 2023",
+        "isSupport": false,
+        "link": 'https://uni-finder-mntq.netlify.app',
+        "source_code": "https://github.com/montanaaq/uni-finder-website"
+    },
+    {
+        "id": 5,
         "name": "Мой сайт портфолио",
         "p": "Сайт с полной информацией о моих крупных проектах, которые я обновляю и по сей день.",
         "url": "my-website",
         "img": "https://i.imgur.com/Qv1123v.png",
-        "main_name": "Profile Website",
+        "main_name": "My Profile Site",
         "date": "ноябрь 2023",
         "link": "https://montaanaq.netlify.app",
         "isSupport": true,
         "source_code": "https://github.com/montanaaq/profile-website"
     },
     {
-        "id": 5,
-        'name': 'Сайт по подбору университетов',
-        'p': 'Сайт, с помощью которого вы сможете найти подходящий вам по баллам и местоположению университет. Написан на React',
-        'url': 'uni-finder-website',
-        'img': 'https://i.imgur.com/gDLtFUa.png',
-        "main_name": "UniFinder Website",
-        "date": "декабрь 2023",
-        "isSupport": false,
-        "link": 'https://uni-finder-mntq.netlify.app',
-        "source_code": "https://github.com/montanaaq/uni-finder-website"
+        "id": 6,
+        "name": "Игра битвы за место в классе",
+        "p": "Бот и сайт в телеграм, с помощью которого можно сразиться за право на место в вашем школьном классе!",
+        'url': 'desks-duels',
+        'img': 'https://i.imgur.com/aXASI67.jpeg',
+        "main_name": "Desks Duels",
+        'date': 'декабрь 2024',
+        'isSupport': true,
+        'link': 'https://t.me/desksduels_bot',
+        "source_code": "https://github.com/montanaaq/desks_duels"
     }
 ]

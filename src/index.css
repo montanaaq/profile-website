@@ -278,7 +278,7 @@ li a:hover {
 .post-content
   img:not(.sneaknews-img):not(.uni-finder-website-img):not(
     .profile_website_img
-  ):not(.schedulebot-img) {
+  ):not(.schedulebot-img):not(.desks-duels-img) {
   width: 400px;
   height: 400px;
   border-radius: 15px;
@@ -310,6 +310,13 @@ li a:hover {
 .schedulebot-img {
   width: 520px;
   height: 416px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  margin-top: 15px;
+}
+.desks-duels-img {
+  width: 300px;
+  height: 600px;
   border-radius: 15px;
   margin-bottom: 50px;
   margin-top: 15px;
@@ -568,7 +575,7 @@ li a:hover {
   .post-content
     img:not(.sneaknews-img):not(.uni-finder-website-img):not(
       .profile_website_img
-    ):not(.schedulebot-img) {
+    ):not(.schedulebot-img):not(.desks-duels-img) {
     width: 300px;
     height: 300px;
     border-radius: 15px;
@@ -600,6 +607,13 @@ li a:hover {
   .schedulebot-img {
     width: 315px;
     height: 250px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    margin-top: 15px;
+  }
+  .desks-duels-img {
+    width: 200px;
+    height: 400px;
     border-radius: 15px;
     margin-bottom: 50px;
     margin-top: 15px;

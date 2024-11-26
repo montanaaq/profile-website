@@ -51,7 +51,7 @@ const ViewPage: FC = () => {
           {ProjectsList.map(el => (
             <div className="container" key={el.id}>
               <h2 style={{ marginBottom: '20px' }} id={el.url}>
-                {el.name} ({el.date})
+                {el.main_name} ({el.date})
               </h2>
               <p style={{ marginBottom: '10px' }}>{el.p}</p>
               <p className="status">
@@ -105,6 +105,8 @@ const ViewPage: FC = () => {
                     ? 'profile_website_img'
                     : el.url === 'schedulebot'
                     ? 'schedulebot-img'
+                    : el.url === 'desks-duels' ?
+                    'desks-duels-img'
                     : ''
                 }
               />
