@@ -1,15 +1,15 @@
 import { FC } from 'react'
-// import Snowfall from 'react-snowfall'
-import Circles from '../../../Circles.tsx'
+import Snowfall from 'react-snowfall'
+// import Circles from '../../../Circles.tsx'
 import ViewPage from './ViewPage.tsx'
 
 const App: FC = () => {
   return (
     <div className="App">
-      {/* <Snowfall /> */}
-      <Circles>
+      <Snowfall />
+      {/* <Circles> */}
         <ViewPage />
-      </Circles>
+      {/* </Circles> */}
     </div>
   )
 }
