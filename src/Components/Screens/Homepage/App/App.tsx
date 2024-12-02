@@ -6,7 +6,7 @@ import ViewPage from './ViewPage.tsx'
 const App: FC = () => {
   return (
     <div className="App">
-      <Snowfall />
+      <Snowfall color='white' snowflakeCount={100}/>
       {/* <Circles> */}
         <ViewPage />
       {/* </Circles> */}
