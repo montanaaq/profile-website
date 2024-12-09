@@ -221,9 +221,13 @@ body {
 .container h2,
 p,
 div,
-a {
+a:not(.footer-span) {
   text-underline-offset: 4px;
   text-decoration-thickness: 0.05rem;
+}
+.footer-span {
+  text-underline-offset: 2px;
+  text-decoration-thickness: 0.04rem;
 }
 .container a {
   transition: 0.3s;
