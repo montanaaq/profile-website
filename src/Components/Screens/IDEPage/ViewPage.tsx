@@ -1,10 +1,18 @@
-import Header from '../Homepage/Header/Header'
+import { motion, useScroll, useSpring } from 'framer-motion'
 import { FC } from 'react'
+import Header from '../Homepage/Header/Header'
 import Edit from './Edit'
 
 const ViewPage: FC = () => {
+  const { scrollYProgress } = useScroll()
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  })
   return (
     <>
+      <motion.div className="progress-bar" style={{ scaleX }} />
       <Header />
       <div className="main-post">
         <div className="wrapper">

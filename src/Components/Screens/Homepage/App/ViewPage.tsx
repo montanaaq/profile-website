@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import Typewriter from 'typewriter-effect'
 import Buttons from '../Buttons.tsx'
 import Footer from '../Footer/Footer.tsx'
 import Header from '../Header/Header.tsx'
@@ -10,16 +11,33 @@ const ViewPage: FC = () => {
       <Header />
       <div className="main">
         <div className="info-container">
-          <img
-            src='./avatar.jpg'
-            alt="out"
-            className="image"
-          />
+          <img src="./avatar.jpg" alt="out" className="image" />
           <div className="namespace">
             <p>
-              Hi! I'm <span>Montana</span>
+              Hi! I'm{' '}
+              <span>
+                <Typewriter
+                options={{
+                  // loop: true,
+                  deleteSpeed: 'natural',
+                  autoStart: true,
+                  cursor: '_',
+                  delay: 180
+                }}
+                  onInit={typewriter => {
+                    typewriter
+                      .typeString('Montana')
+                      .pauseFor(1000)
+                      .deleteAll()
+                      .typeString('Python, Frontend Developer')
+                      .pauseFor(1000)
+                      .deleteAll()
+                      .typeString('Montana')
+                      .start()
+                  }}
+                />
+              </span>
             </p>
-            <span>Python, Frontend Developer</span>
             <SocialLinks />
             <div style={{ paddingTop: '15px' }}></div>
             <Buttons />

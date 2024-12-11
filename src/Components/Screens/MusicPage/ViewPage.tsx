@@ -1,12 +1,20 @@
-import Header from '../Homepage/Header/Header'
-import Card from './Card'
-import AuthorCard from './AuthorCard'
-import { MusicList } from '../../../data/Music/MusicList'
+import { motion, useScroll, useSpring } from 'framer-motion'
 import AuthorList from '../../../data/Music/AuthorList'
+import { MusicList } from '../../../data/Music/MusicList'
+import Header from '../Homepage/Header/Header'
+import AuthorCard from './AuthorCard'
+import Card from './Card'
 
 const ViewPage = () => {
+  const { scrollYProgress } = useScroll()
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  })
   return (
     <>
+      <motion.div className="progress-bar" style={{ scaleX }} />
       <Header />
       <div className="main-post">
         <div className="mp_wrapper">
@@ -25,7 +33,7 @@ const ViewPage = () => {
               alt="spotify_ico"
             />
           </div>
-          <div className='author_container'>
+          <div className="author_container">
             {AuthorList.map(el => (
               <AuthorCard
                 key={el.id}
@@ -39,12 +47,14 @@ const ViewPage = () => {
             ))}
           </div>
           <h1
-              style={{
-                display: 'flex',
-                gap: '10px',
-                marginBottom: '40px'
-              }}
-            >Альбомы</h1>
+            style={{
+              display: 'flex',
+              gap: '10px',
+              marginBottom: '40px'
+            }}
+          >
+            Альбомы
+          </h1>
           <div className="music_container">
             {MusicList.map(el => (
               <Card

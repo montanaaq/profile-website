@@ -1,18 +1,27 @@
+import { motion, useScroll, useSpring } from 'framer-motion'
 import { FC } from 'react'
 import { ProjectsList } from '../../../data/Projects/ProjectsList'
 import Footer from '../Homepage/Footer/Footer'
 import Header from '../Homepage/Header/Header'
 
 const ViewPage: FC = () => {
-  const today = new Date();
-  
+  const today = new Date()
+
+  const { scrollYProgress } = useScroll()
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  })
+
   const formattedDate = new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric',
-  }).format(today);
+    day: 'numeric'
+  }).format(today)
   return (
     <div>
+      <motion.div className="progress-bar" style={{ scaleX }} />
       <Header />
       <div className="main-post">
         <header style={{ margin: '10px 0px 40px 0px' }}>
@@ -105,8 +114,8 @@ const ViewPage: FC = () => {
                     ? 'profile_website_img'
                     : el.url === 'schedulebot'
                     ? 'schedulebot-img'
-                    : el.url === 'desks-duels' ?
-                    'desks-duels-img'
+                    : el.url === 'desks-duels'
+                    ? 'desks-duels-img'
                     : ''
                 }
               />
