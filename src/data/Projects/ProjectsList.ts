@@ -62,7 +62,7 @@ export const ProjectsList: IProjectsList[] = [
         "name": "Мой сайт портфолио",
         "p": "Сайт с полной информацией о моих крупных проектах, которые я обновляю и по сей день.",
         "url": "my-website",
-        "img": "https://i.imgur.com/Qv1123v.png",
+        "img": "https://i.imgur.com/8xLheCI.png",
         "main_name": "My Profile Site",
         "date": "ноябрь 2023",
         "link": "https://montaanaq.netlify.app",
