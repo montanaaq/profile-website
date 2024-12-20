@@ -2,7 +2,7 @@
 
 html[data-theme='light'] {
   --text-color: rgb(37, 37, 37);
-  --bg-color: rgb(225, 225, 225);
+  --bg-color: e8e8e8;
   --circles-color: rgba(0, 0, 0, 0.2);
 }
 html {

@@ -19,6 +19,7 @@ const ViewPage: FC = () => {
     month: 'long',
     day: 'numeric'
   }).format(today)
+  
   return (
     <div>
       <motion.div className="progress-bar" style={{ scaleX }} />
