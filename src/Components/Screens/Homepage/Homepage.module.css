@@ -1,0 +1,30 @@
+.button_wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  font-weight: 600;
+}
+.button_wrapper Button {
+  background-color: var(--secondary);
+}
+
+.social_links {
+  padding-top: 10px;
+}
+.social_links a {
+  transition: 0.3s;
+}
+.social_links a:hover {
+  opacity: 0.8;
+}
+@media only screen and (max-width: 768px) {
+  .social_links {
+    padding-top: 8px;
+  }
+  .toggle-dark-mode {
+    font-size: 18px;
+  }
+}

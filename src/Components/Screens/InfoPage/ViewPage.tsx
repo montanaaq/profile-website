@@ -3,6 +3,7 @@ import { FC } from 'react'
 import { ProjectsList } from '../../../data/Projects/ProjectsList'
 import Footer from '../Homepage/Footer/Footer'
 import Header from '../Homepage/Header/Header'
+import styles from './Info.module.css'
 
 const ViewPage: FC = () => {
   const today = new Date()
@@ -24,7 +25,7 @@ const ViewPage: FC = () => {
     <div>
       <motion.div className="progress-bar" style={{ scaleX }} />
       <Header />
-      <div className="main-post">
+      <div className={styles.main_post}>
         <header style={{ margin: '10px 0px 40px 0px' }}>
           <h1 style={{ fontSize: '38px', fontWeight: 600 }}>
             Мои <span style={{ color: 'var(--secondary)' }}>проекты</span>
@@ -33,7 +34,7 @@ const ViewPage: FC = () => {
             <span>{formattedDate}</span>
           </div>
         </header>
-        <div className="post-content">
+        <div className={styles.post_content}>
           <h2 style={{ textAlign: 'left', marginBottom: '15px' }}>
             Содержание
           </h2>
@@ -59,17 +60,17 @@ const ViewPage: FC = () => {
             ))}
           </ul>
           {ProjectsList.map(el => (
-            <div className="container" key={el.id}>
+            <div className={styles.container} key={el.id}>
               <h2 style={{ marginBottom: '20px' }} id={el.url}>
                 {el.main_name} ({el.date})
               </h2>
               <p style={{ marginBottom: '10px' }}>{el.p}</p>
-              <p className="status">
+              <p className={styles.status}>
                 Статус:{' '}
                 {el.isSupport ? (
-                  <span className="support">Поддерживается</span>
+                  <span className={styles.support}>Поддерживается</span>
                 ) : (
-                  <span className="not-support">Не поддерживается</span>
+                  <span className={styles.not_support}>Не поддерживается</span>
                 )}
               </p>
               {el.link && (
@@ -108,15 +109,15 @@ const ViewPage: FC = () => {
                 alt="not downloaded"
                 className={
                   el.url === 'sneaknews'
-                    ? 'sneaknews-img'
-                    : el.url === 'uni-finder-website'
-                    ? 'uni-finder-website-img'
-                    : el.url === 'my-website'
-                    ? 'profile_website_img'
+                    ? `${styles.sneaknews_img}`
+                    : el.url === 'uni_finder_website'
+                    ? `${styles.uni_finder_website_img}`
+                    : el.url === 'my_website'
+                    ? `${styles.profile_website_img}`
                     : el.url === 'schedulebot'
-                    ? 'schedulebot-img'
-                    : el.url === 'desks-duels'
-                    ? 'desks-duels-img'
+                    ? `${styles.schedulebot_img}`
+                    : el.url === 'desks_duels'
+                    ? `${styles.desks_duels_img}`
                     : ''
                 }
               />

@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { Button } from '@mui/material'
+import styles from './MusicPage.module.css'
 
 interface ICard {
   id: number
@@ -13,8 +14,8 @@ interface ICard {
 
 const Card: FC<ICard> = ({ id, name, img, best, alt, link, duration }) => {
   return (
-    <div className="card" key={`card_${id}`}>
-      <div className="img_container" key={`img_${id}`}>
+    <div className={styles.card} key={`card_${id}`}>
+      <div key={`img_${id}`}>
         <img src={img} alt={alt} key={`img_new_${id}`} />
       </div>
       <h2

@@ -2,6 +2,7 @@ import { useState, FC } from 'react'
 import LightModeIcon from '@mui/icons-material/LightMode'
 import DarkModeIcon from '@mui/icons-material/DarkMode'
 import { Toaster, toast } from 'sonner'
+import styles from './Header.module.css'
 
 
 const LightModeToggle: FC = () => {
@@ -23,7 +24,7 @@ const LightModeToggle: FC = () => {
   return (
     <div>
       <Toaster richColors position='bottom-left' expand />
-      <button onClick={toggleLightMode} className="toggle-light-mode">
+      <button onClick={toggleLightMode} className={styles.toggle_light_mode}>
         {!lightMode ? (
           <LightModeIcon fontSize="small" />
         ) : (

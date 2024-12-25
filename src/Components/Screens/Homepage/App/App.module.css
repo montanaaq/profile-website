@@ -1,0 +1,108 @@
+.main {
+  position: relative;
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  max-width: calc(var(--main-width) + var(--gap) * 2);
+  margin: auto;
+  padding: var(--gap);
+}
+.main .info_container {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  min-height: calc(
+    100vh - var(--header-height) - var(--footer-height) - (var(--gap) * 2)
+  );
+  text-align: center;
+}
+
+.info_container .namespace span:nth-child(1) {
+  font-weight: 500;
+  color: var(--secondary);
+  transition: 0.3s;
+  position: relative;
+  text-shadow: 0 0 2px rgba(var(--secondary-rgb), 0.3);
+}
+.img_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+  gap: 40px;
+}
+.info_container .namespace {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.info_container .namespace p {
+  font-size: 26px;
+  font-weight: 400;
+}
+.info_container .namespace span:nth-child(1) {
+  font-weight: 500;
+  color: var(--secondary);
+  transition: 0.3s;
+  position: relative;
+  text-shadow: 0 0 2px rgba(var(--secondary-rgb), 0.3);
+}
+
+.info_container .namespace span:nth-child(2) {
+  margin-top: 5px;
+}
+.image {
+  justify-content: start;
+  display: inline-table;
+  border-radius: 50%;
+  width: 195px;
+  height: 195px;
+  -webkit-user-drag: none;
+  transition: 0.5s;
+}
+.image:hover {
+  filter: drop-shadow(0 0 10px #e2ac7386);
+}
+.namespace .projects-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  margin-top: 5px;
+}
+.namespace .projects-list p {
+  font-size: 18px;
+}
+.namespace .projects-list a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+.projects-list a:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+@media only screen and (max-width: 768px) {
+  .main .info_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .projects-list {
+    padding-top: 10px;
+  }
+
+  .projects-list p {
+    font-size: 14px;
+    color: var(--text-color);
+  }
+  .namespace p {
+    margin-top: 10px;
+  }
+  .info_container p {
+    font-size: 30px;
+  }
+  .image {
+    width: 200px;
+    height: 200px;
+  }
+}

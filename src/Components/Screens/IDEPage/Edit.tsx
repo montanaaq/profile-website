@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import ContentCopyIcon from '@mui/icons-material/ContentCopy'
 import { useRef } from 'react'
+import styles from './IDEPage.module.css'
 
 interface EditProps {
   header: string
@@ -44,7 +45,6 @@ const Edit: FC<EditProps> = ({
         }}
       >
         <h2
-          className="header_text"
           dangerouslySetInnerHTML={{ __html: header }}
         ></h2>
         <img
@@ -55,7 +55,7 @@ const Edit: FC<EditProps> = ({
           }}
         />
       </div>
-      <div className="settings">
+      <div className={styles.settings}>
         <pre
           style={{
             fontSize: '18px',
@@ -69,11 +69,11 @@ const Edit: FC<EditProps> = ({
             whiteSpace: 'pre-wrap',
             wordBreak: 'break-word'
           }}
-          className="settings_text"
+          className={styles.settings_text}
           ref={pRef}
           dangerouslySetInnerHTML={{ __html: mainInfo }}
         ></pre>
-        <button onClick={copyToClipboard} className="copy_button">
+        <button onClick={copyToClipboard} className={styles.copy_button}>
           <ContentCopyIcon fontSize="small" />
           Copy
         </button>

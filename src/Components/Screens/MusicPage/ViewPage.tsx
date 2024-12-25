@@ -4,6 +4,7 @@ import { MusicList } from '../../../data/Music/MusicList'
 import Header from '../Homepage/Header/Header'
 import AuthorCard from './AuthorCard'
 import Card from './Card'
+import styles from './MusicPage.module.css'
 
 const ViewPage = () => {
   const { scrollYProgress } = useScroll()
@@ -16,9 +17,9 @@ const ViewPage = () => {
     <>
       <motion.div className="progress-bar" style={{ scaleX }} />
       <Header />
-      <div className="main-post">
-        <div className="mp_wrapper">
-          <div className="header_container">
+      <div className={styles.main_post}>
+        <div className={styles.mp_wrapper}>
+          <div className={styles.header_container}>
             <h1
               dangerouslySetInnerHTML={{
                 __html: 'Моя <p style="color: var(--secondary)"> музыка</p>'
@@ -33,7 +34,7 @@ const ViewPage = () => {
               alt="spotify_ico"
             />
           </div>
-          <div className="author_container">
+          <div className={styles.author_container}>
             {AuthorList.map(el => (
               <AuthorCard
                 key={el.id}
@@ -55,7 +56,7 @@ const ViewPage = () => {
           >
             Альбомы
           </h1>
-          <div className="music_container">
+          <div className={styles.music_container}>
             {MusicList.map(el => (
               <Card
                 key={el.id}

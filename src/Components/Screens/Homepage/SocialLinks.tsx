@@ -1,10 +1,11 @@
 import TelegramIcon from '@mui/icons-material/Telegram'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import { FC } from 'react'
+import styles from './Homepage.module.css'
 
 const SocialLinks: FC = () => {
   return (
-    <div className="social-links">
+    <div className={styles.social_links}>
       <a
         href="https://github.com/montanaaq"
         target="_blank"

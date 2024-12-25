@@ -1,10 +1,11 @@
 import Button from '@mui/material/Button'
 import { Link } from 'react-router-dom'
 import { FC } from 'react'
+import styles from './Homepage.module.css'
 
 const Buttons: FC = () => {
   return (
-    <div className="button_wrapper">
+    <div className={styles.button_wrapper}>
       <Link to="/info">
         <Button variant="contained" size="small">
           Projects

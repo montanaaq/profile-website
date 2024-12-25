@@ -2,6 +2,7 @@ import { motion, useScroll, useSpring } from 'framer-motion'
 import { FC } from 'react'
 import Header from '../Homepage/Header/Header'
 import Edit from './Edit'
+import styles from './IDEPage.module.css'
 
 const ViewPage: FC = () => {
   const { scrollYProgress } = useScroll()
@@ -14,8 +15,8 @@ const ViewPage: FC = () => {
     <>
       <motion.div className="progress-bar" style={{ scaleX }} />
       <Header />
-      <div className="main-post">
-        <div className="wrapper">
+      <div className={styles.main_post}>
+        <div className={styles.wrapper}>
           <Edit
             header={'Мои <a>настройки</a> VSCode'}
             subHeader={'settings.json'}
@@ -28,9 +29,7 @@ const ViewPage: FC = () => {
           <Edit
             header={'Мои <a>расширения</a> VSCode'}
             subHeader={'extensions'}
-            mainInfo={
-              'Из расширений, которые я использую могу порекомендовать 3 из них:<br /> <br /> 1. <u>Codeium</u> - это ИИ, который помогает вам писать код на этапе разработке и также есть отдельный чат с ним <br /><a href="https://codeium.com">Ссылка</a> <br />Extension ID - Codeium.codeium <br /><img class="codeium_img" src="https://i.imgur.com/9Okepby.png" alt="codeium_img"/> <br /><br /> 2. <u>Backticks</u> - это ещё одно из моих любимых расширений, так как он автоматически ставит за вас обратные ковычки при f строках в JS, также считаю очень полезным и всегда использую <br />Extension ID - fractalbrew.backticks <img class="backticks_img" src="https://i.imgur.com/JekVb0c.png" alt="backticks_img" /><br /><br /> 3. <u>Error Lens</u> - расширение, которое показывает ваши ошибки прямо в строке VSCode, очень полезно, так как видно где какая ошибка была допущена<br />Extension ID - usernamehw.errorlens.<img src="https://i.imgur.com/mxvn9Ha.png" alt="errorlens_img" class="errorlens_img" /> <br /><br />Конечно же у меня есть очень много тем, которые также являются расширениями. Вот небольшой список моих любимых: <br /> <ul><li>Catpuccin Themes</li><li>Andromeda</li><li>Eva Theme</li><li>Horizon Theme</li><li>Material Theme</li></ul>'
-            }
+            mainInfo={`Из расширений, которые я использую могу порекомендовать 3 из них:<br /> <br /> 1. <u>Codeium</u> - это ИИ, который помогает вам писать код на этапе разработке и также есть отдельный чат с ним <br /><a href="https://codeium.com">Ссылка</a> <br />Extension ID - Codeium.codeium <br /><img class=${styles.codeium_img} src="https://i.imgur.com/9Okepby.png" alt="codeium_img"/> <br /><br /> 2. <u>Backticks</u> - это ещё одно из моих любимых расширений, так как он автоматически ставит за вас обратные кавычки при f строках в JS, также считаю очень полезным и всегда использую <br />Extension ID - fractalbrew.backticks <img class=${styles.backticks_img} src="https://i.imgur.com/JekVb0c.png" alt="backticks_img" /><br /><br /> 3. <u>Error Lens</u> - расширение, которое показывает ваши ошибки прямо в строке VSCode, очень полезно, так как видно где какая ошибка была допущена<br />Extension ID - usernamehw.errorlens.<img src="https://i.imgur.com/mxvn9Ha.png" alt="errorlens_img" class=${styles.errorlens_img} /> <br /><br />Конечно же у меня есть очень много тем, которые также являются расширениями. Вот небольшой список моих любимых: <br /> <ul><li>Catpuccin Themes</li><li>Andromeda</li><li>Eva Theme</li><li>Horizon Theme</li><li>Material Theme</li></ul>`}
             img={
               'https://www-assets.kolide.com/assets/inventory/device_properties/icons/vs-code-extensions-0037129be9c8e68253967dd0217dab55a93dba09.png'
             }

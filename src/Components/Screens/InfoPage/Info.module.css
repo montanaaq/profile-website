@@ -1,0 +1,163 @@
+.main_post {
+  position: relative;
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  max-width: calc(var(--main-width) + var(--gap) * 2);
+  margin: auto;
+}
+
+.post_content
+  img:not(.sneaknews_img):not(.uni_finder_website_img):not(
+    .profile_website_img
+  ):not(.schedulebot_img):not(.desks_duels_img) {
+  width: 400px;
+  height: 400px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  margin-top: 15px;
+}
+.sneaknews_img {
+  width: 400px;
+  height: 700px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  margin-top: 15px;
+}
+.uni_finder_website_img {
+  width: 600px;
+  height: 400px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  margin-top: 15px;
+}
+.profile_website_img {
+  width: 400px;
+  height: 475px;
+  border: 0.1px solid var(--text-color);
+  margin-top: 10px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.schedulebot_img {
+  width: 520px;
+  height: 416px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  margin-top: 15px;
+}
+.desks_duels_img {
+  width: 300px;
+  height: 600px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  margin-top: 15px;
+}
+.container h2 {
+  word-break: keep-all;
+}
+.container h2,
+p,
+div,
+a:not(.footer_span) {
+  text-underline-offset: 4px;
+  text-decoration-thickness: 0.05rem;
+}
+.container a {
+  transition: 0.3s;
+}
+.container a:hover {
+  opacity: 0.8;
+}
+
+.support {
+  color: #32cd32;
+}
+.not_support {
+  color: #ff5656;
+}
+
+.status {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.container h2 {
+  word-break: keep-all;
+}
+.container h2 {
+  text-underline-offset: 4px;
+  text-decoration-thickness: 0.05rem;
+}
+
+.container a {
+  transition: 0.3s;
+}
+.container a:hover {
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 768px) {
+  .main_post {
+    padding: 20px;
+  }
+  .post-content {
+    padding: 0 10px;
+  }
+
+  .post-content h2 {
+    font-size: 24px;
+  }
+
+  .post-content ul {
+    padding: 0;
+  }
+
+  .post-content ul li {
+    margin-bottom: 10px;
+  }
+
+  .post-content
+    img:not(.sneaknews_img):not(.uni_finder_website_img):not(
+      .profile_website_img
+    ):not(.schedulebot_img):not(.desks_duels_img) {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    margin-top: 15px;
+  }
+  .sneaknews_img {
+    width: 340px;
+    height: 600px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    margin-top: 15px;
+  }
+  .uni_finder_website_img {
+    width: 350px;
+    height: 225px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    margin-top: 15px;
+  }
+  .profile_website_img {
+    width: 300px;
+    height: 360px;
+    border: 0.1px solid var(--text-color);
+    margin-top: 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+  .schedulebot_img {
+    width: 315px;
+    height: 250px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    margin-top: 15px;
+  }
+  .desks_duels_img {
+    width: 200px;
+    height: 400px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    margin-top: 15px;
+  }
+}

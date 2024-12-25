@@ -4,15 +4,16 @@ import Buttons from '../Buttons.tsx'
 import Footer from '../Footer/Footer.tsx'
 import Header from '../Header/Header.tsx'
 import SocialLinks from '../SocialLinks.tsx'
+import styles from './App.module.css'
 
 const ViewPage: FC = () => {
   return (
     <>
       <Header />
-      <div className="main">
-        <div className="info-container">
-          <img src="./avatar.jpg" alt="out" className="image" />
-          <div className="namespace">
+      <div className={styles.main}>
+        <div className={styles.info_container}>
+          <img src="./avatar.jpg" alt="out" className={styles.image} />
+          <div className={styles.namespace}>
             <p>
               Hi! I'm{' '}
               <span>

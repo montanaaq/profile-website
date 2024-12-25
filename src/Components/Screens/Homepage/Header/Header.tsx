@@ -1,18 +1,19 @@
 import LightModeToggle from './LightModeToggle.js'
 import { Link } from 'react-router-dom'
 import { FC } from 'react'
+import styles from './Header.module.css'
 
 const Header: FC = () => {
   return (
-    <header className="header">
-      <div className="wrapper">
+    <header className={styles.header}>
+      <div className={styles.wrapper}>
         <Link
           to="/"
           style={{
             textDecoration: 'none'
           }}
         >
-          <h4 className="name">Montana</h4>
+          <h4 className={styles.name}>Montana</h4>
         </Link>
         <LightModeToggle />
       </div>

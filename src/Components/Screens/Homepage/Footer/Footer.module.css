@@ -1,0 +1,26 @@
+.footer {
+  text-align: center;
+  font-size: 12px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 500;
+}
+.footer a,
+.footer span {
+  color: var(--text-color);
+}
+.footer a:hover {
+  opacity: 0.8;
+}
+.footer .footer_span {
+  text-underline-offset: 2px;
+  text-decoration-thickness: 0.04rem;
+}
+@media only screen and (max-width: 768px) {
+  .footer {
+    font-size: 11px;
+  }
+}
