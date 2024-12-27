@@ -1,30 +1,51 @@
-# React + TypeScript + Vite
+# My Personal Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+Welcome to my personal website! This application serves as a central hub for showcasing my projects, skills, and experiences. The main goal is to provide visitors with an engaging and informative platform, making it easier to explore who I am and what I do.
 
-Currently, two official plugins are available:
+## Current Status
+Right now, the primary focus is on establishing key functionalities and ensuring a stable foundation. I am prioritizing core features and content organization over design in this early stage.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Future Improvements
+In upcoming versions, I plan to refine the design and enhance the overall user experience. Potential improvements include:
+- A more polished user interface.
+- Integration of additional libraries or frameworks for styling.
+- Further optimization for performance and accessibility.
 
-## Expanding the ESLint configuration
+## Getting Started
+To set up the website locally for development or customization, follow these steps:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. **Clone the Repository**  
+   ```bash
+   git clone https://github.com/your-username/my-personal-website
+   ```
 
-- Configure the top-level `parserOptions` property like this:
+2. **Navigate to the Project Directory**  
+   ```bash
+   cd my-personal-website
+   ```
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+3. **Install Dependencies**  
+   ```bash
+   npm install
+   ```
+
+4. **Run the Development Server**  
+   ```bash
+   npm run dev
+   ```
+
+5. **Open Your Browser**  
+   Visit [http://localhost:5137](http://localhost:5137) to view the application in action.
+
+## Contributing
+I welcome contributions to help improve this personal website. If you’d like to contribute:
+
+1. **Fork the repository** on GitHub.
+2. **Create a new branch** for your feature or bugfix.
+3. **Make your changes** and test them thoroughly.
+4. **Submit a pull request** with a clear description of the modifications.
+
+## License
+This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute as allowed by the license.
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
