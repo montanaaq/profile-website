@@ -59,11 +59,11 @@ export const ProjectsList: IProjectsList[] = [
     },
     {
         "id": 5,
-        "name": "Мой сайт портфолио",
+        "name": "Мой собственный сайт",
         "p": "Сайт с полной информацией о моих крупных проектах, которые я обновляю и по сей день.",
         "url": "my_website",
         "img": "https://i.imgur.com/8xLheCI.png",
-        "main_name": "My Profile Site",
+        "main_name": "My Personal Site",
         "date": "ноябрь 2023",
         "link": "https://montaanaq.netlify.app",
         "isSupport": true,
