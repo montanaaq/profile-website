@@ -17,7 +17,7 @@ html {
   box-sizing: border-box;
 }
 :root {
-  --text-color: rgb(225, 225, 225);
+  --text-color: e8e8e8;
   --bg-color: rgb(37, 37, 37);
   --circles-color: rgba(255, 255, 255, 0.2);
   --secondary: #1876d2;
@@ -94,7 +94,7 @@ li a:hover {
 @media only screen and (max-width: 768px) {
   html[data-theme='light'] {
     --text-color: rgb(37, 37, 37);
-    --bg-color: rgb(225, 225, 225);
+    --bg-color: e8e8e8;
     --circles-color: rgba(0, 0, 0, 0.2);
   }
   html {
