@@ -67,7 +67,7 @@ export const ProjectsList: IProjectsList[] = [
         "date": "ноябрь 2023",
         "link": "https://montaanaq.netlify.app",
         "isSupport": true,
-        "source_code": "https://github.com/montanaaq/profile-website"
+        "source_code": "https://github.com/montanaaq/personal-website"
     },
     {
         "id": 6,
